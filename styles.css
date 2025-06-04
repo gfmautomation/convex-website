@@ -109,6 +109,8 @@ section[id] {
 .primary-button {
     background-color: var(--accent-color);
     color: white;
+    font-size: 1.2rem;
+    border: 2px solid var(--accent-color);
 }
 
 .secondary-button {
@@ -225,11 +227,64 @@ section[id] {
     border-radius: 1rem;
     box-shadow: var(--shadow);
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.pricing-card h3 {
+    margin-bottom: 1rem;
+}
+
+.pricing-card ul {
+    list-style: none;
+    margin: 2rem 0;
+    flex-grow: 1;
+}
+
+.pricing-card .primary-button {
+    margin-top: auto;
+    margin-bottom: 1rem;
 }
 
 .pricing-card.featured {
-    transform: scale(1.05);
-    border: 2px solid var(--accent-color);
+    transform: scale(1.1);
+    background: linear-gradient(to bottom, #63b3ed, #4299e1);
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.pricing-card.featured .price,
+.pricing-card.featured li {
+    color: white;
+}
+
+.pricing-card.featured .price span {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.pricing-card.featured::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    background: linear-gradient(135deg, #63b3ed, #4299e1);
+    z-index: -1;
+    border-radius: 1.2rem;
+    opacity: 0.15;
+}
+
+.pricing-card.featured .primary-button {
+    background-color: white;
+    color: #4299e1;
+    border: 2px solid white;
+}
+
+.pricing-card.featured .primary-button:hover {
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 .price {
@@ -242,11 +297,6 @@ section[id] {
 .price span {
     font-size: 1rem;
     color: var(--light-text);
-}
-
-.pricing-card ul {
-    list-style: none;
-    margin: 2rem 0;
 }
 
 .pricing-card li {
