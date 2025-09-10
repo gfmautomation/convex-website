@@ -304,19 +304,19 @@
         </section>
 
         <section id="contact" class="contact">
-            <h2>Ready to Transform Your Contract Review Process?</h2>
-            <form class="contact-form">
-                <input type="text" placeholder="Full Name" required>
-                <input type="email" placeholder="Email Address" required>
-                <input type="tel" placeholder="Phone Number">
-                <select required>
+            <h2>Want to Learn More Before You Transform Your Contract Review Process?</h2>
+            <form class="contact-form" action="https://formspree.io/f/xovnrlaj" method="POST">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <input type="tel" name="phone" placeholder="Phone Number">
+                <select name="business" required>
                     <option value="">What's Your Business?</option>
                     <option value="conveyancer">Conveyancer</option>
                     <option value="property-lawyer">Property Lawyer</option>
                     <option value="buyers-agent">Buyers Agent</option>
                     <option value="real-estate-agent">Real Estate Agent</option>
                 </select>
-                <a href="#contact" class="primary-button">Contact Us</a>
+                <button type="submit" class="primary-button">Contact Us</button>
             </form>
         </section>
     </main>
@@ -361,6 +361,55 @@
             answer.style.paddingTop = '0.5em';
           }
           this.classList.toggle('open');
+        });
+      });
+
+      // Handle contact form submission
+      document.querySelector('.contact-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const form = this;
+        const submitButton = form.querySelector('button[type="submit"]');
+        const originalText = submitButton.textContent;
+        
+        // Show loading state
+        submitButton.textContent = 'Sending...';
+        submitButton.disabled = true;
+        
+        // Submit the form
+        fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: {
+            'Accept': 'application/json'
+          }
+        })
+        .then(response => {
+          if (response.ok) {
+            submitButton.textContent = 'Message Sent!';
+            submitButton.style.backgroundColor = 'var(--success-color)';
+            form.reset();
+            
+            // Reset button after 3 seconds
+            setTimeout(() => {
+              submitButton.textContent = originalText;
+              submitButton.style.backgroundColor = '';
+              submitButton.disabled = false;
+            }, 3000);
+          } else {
+            throw new Error('Form submission failed');
+          }
+        })
+        .catch(error => {
+          submitButton.textContent = 'Error - Try Again';
+          submitButton.style.backgroundColor = '#e74c3c';
+          
+          // Reset button after 3 seconds
+          setTimeout(() => {
+            submitButton.textContent = originalText;
+            submitButton.style.backgroundColor = '';
+            submitButton.disabled = false;
+          }, 3000);
         });
       });
     </script>
