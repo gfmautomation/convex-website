@@ -1,2 +1,2 @@
 # convex-website
-website for ConvEx
+website for Convex
