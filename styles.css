@@ -514,7 +514,7 @@ section[id] {
 
 .faq-question {
     cursor: pointer;
-    padding: 1.25rem 1.5rem;
+    padding: 1.25rem 3rem;
     font-size: 1.1rem;
     font-weight: 600;
     color: var(--primary-color);
@@ -564,7 +564,11 @@ section[id] {
     .faq-grid {
         padding: 0 0.5rem;
     }
-    .faq-question, .faq-answer {
+    .faq-question {
+        padding-left: 1rem;
+        padding-right: 3rem;
+    }
+    .faq-answer {
         padding-left: 1rem;
         padding-right: 1rem;
     }
@@ -743,7 +747,7 @@ section[id] {
     
     .faq-question {
         font-size: 1rem;
-        padding: 1rem;
+        padding: 1rem 3rem 1rem 1rem;
     }
     
     .faq-answer {
