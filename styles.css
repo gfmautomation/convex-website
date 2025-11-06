@@ -108,6 +108,15 @@ section[id] {
     margin: 0 auto;
 }
 
+.hero-logo {
+    height: 180px;
+    width: auto;
+    margin-bottom: 2rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .hero h1 {
     font-size: 3rem;
     margin-bottom: 1.5rem;
@@ -268,6 +277,15 @@ section[id] {
     z-index: 1;
 }
 
+.pricing-logo {
+    height: 120px;
+    width: auto;
+    margin-bottom: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .pricing-card h3 {
     margin-bottom: 1rem;
 }
@@ -356,6 +374,13 @@ section[id] {
 .footer-section h3,
 .footer-section h4 {
     margin-bottom: 1rem;
+}
+
+.footer-logo {
+    height: 60px;
+    width: auto;
+    margin-bottom: 1rem;
+    display: block;
 }
 
 .footer-section ul {
