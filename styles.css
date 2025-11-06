@@ -95,6 +95,22 @@ section[id] {
     transform: translateY(-1px);
 }
 
+.nav-links .sign-in-button {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.nav-links .sign-in-button:hover {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+    transform: translateY(-1px);
+}
+
 /* Hero Section */
 .hero {
     padding: 8rem 2rem 4rem;
