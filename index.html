@@ -454,12 +454,18 @@
         q.addEventListener('click', function() {
           const answer = this.nextElementSibling;
           if (!answer) return;
-          if (answer.style.maxHeight) {
-            answer.style.maxHeight = null;
-            answer.style.paddingTop = null;
+          if (answer.style.maxHeight && answer.style.maxHeight !== '0px') {
+            answer.style.maxHeight = '0px';
+            answer.classList.remove('open');
           } else {
-            answer.style.maxHeight = answer.scrollHeight + 'px';
-            answer.style.paddingTop = '0.5em';
+            // Calculate the actual height needed by temporarily removing max-height
+            const currentMaxHeight = answer.style.maxHeight;
+            answer.style.maxHeight = 'none';
+            const height = answer.scrollHeight;
+            answer.style.maxHeight = currentMaxHeight;
+            // Set max-height to the calculated height plus some buffer
+            answer.style.maxHeight = (height + 50) + 'px';
+            answer.classList.add('open');
           }
           this.classList.toggle('open');
         });

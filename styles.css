@@ -752,10 +752,6 @@ section[id] {
     user-select: none;
 }
 
-.faq-question.open + .faq-answer {
-    padding: 6rem 1.5rem 6rem 1.5rem;
-}
-
 .faq-question::after {
     content: '\25BC'; /* Unicode for down chevron */
     position: absolute;
@@ -782,6 +778,10 @@ section[id] {
     padding: 0rem 1.5rem;
     box-sizing: border-box;
     transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), padding 0.3s;
+}
+
+.faq-answer.open {
+    padding: 1rem 1.5rem;
 }
 
 .faq-question.open {
