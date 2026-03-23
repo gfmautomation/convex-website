@@ -221,16 +221,17 @@ section[id] {
 .demo-video {
     padding: 4rem 2rem;
     background-color: var(--background-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .demo-video-container {
     max-width: 900px;
     width: 100%;
-    margin: 0 auto;
-    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1rem;
+    box-sizing: border-box;
 }
 
 .demo-video h2 {
@@ -242,6 +243,9 @@ section[id] {
 .video-wrapper {
     position: relative;
     width: 100%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
     padding-bottom: 56.25%; /* 16:9 aspect ratio */
     border-radius: 1rem;
     overflow: hidden;
