@@ -221,11 +221,16 @@ section[id] {
 .demo-video {
     padding: 4rem 2rem;
     background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .demo-video-container {
     max-width: 900px;
+    width: 100%;
     margin: 0 auto;
+    text-align: center;
 }
 
 .demo-video h2 {
