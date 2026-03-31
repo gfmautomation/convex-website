@@ -222,8 +222,13 @@ section[id] {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 4rem 2rem;
-    background-color: var(--background-color);
+    padding: 4.5rem 2rem;
+    background: linear-gradient(
+        180deg,
+        var(--light-background) 0%,
+        var(--background-color) 35%,
+        var(--light-background) 100%
+    );
     width: 100%;
     box-sizing: border-box;
 }
@@ -233,24 +238,66 @@ section[id] {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 900px;
+    max-width: 960px;
     padding: 0 1rem;
     box-sizing: border-box;
 }
 
-.demo-video h2 {
+.demo-video-header {
     text-align: center;
     margin-bottom: 2rem;
+    max-width: 36rem;
+}
+
+.demo-video h2 {
+    margin-bottom: 0.5rem;
     color: var(--primary-color);
+    font-size: 2.25rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+}
+
+.demo-video-subtitle {
+    margin: 0;
+    font-size: 1.05rem;
+    font-weight: 400;
+    color: var(--light-text);
+    line-height: 1.5;
+}
+
+.demo-video-frame {
+    width: 100%;
+    padding: 0.75rem;
+    background: linear-gradient(
+        145deg,
+        rgba(0, 199, 137, 0.12) 0%,
+        rgba(214, 232, 16, 0.08) 50%,
+        rgba(1, 43, 39, 0.06) 100%
+    );
+    border-radius: 1.25rem;
+    box-shadow:
+        0 4px 6px rgba(1, 43, 39, 0.06),
+        0 20px 50px -12px rgba(1, 43, 39, 0.12);
+    border: 1px solid var(--border-color);
+    transition: box-shadow 0.35s ease, transform 0.35s ease;
+}
+
+.demo-video-frame:hover {
+    box-shadow:
+        0 8px 12px rgba(1, 43, 39, 0.08),
+        0 28px 60px -16px rgba(1, 43, 39, 0.16);
+    transform: translateY(-2px);
 }
 
 .video-wrapper {
     position: relative;
     width: 100%;
     padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    border-radius: 1rem;
+    border-radius: 0.75rem;
     overflow: hidden;
-    box-shadow: var(--shadow);
+    background: var(--primary-color);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
 }
 
 .video-wrapper iframe {
@@ -259,6 +306,7 @@ section[id] {
     left: 0;
     width: 100%;
     height: 100%;
+    border: 0;
 }
 
 /* Features Section */
@@ -955,11 +1003,28 @@ section[id] {
     }
     
     .demo-video {
-        padding: 3rem 1.5rem;
+        padding: 3rem 1.25rem;
     }
-    
+
+    .demo-video-header {
+        margin-bottom: 1.5rem;
+    }
+
     .demo-video h2 {
         font-size: 1.75rem;
+    }
+
+    .demo-video-subtitle {
+        font-size: 0.95rem;
+    }
+
+    .demo-video-frame {
+        padding: 0.5rem;
+        border-radius: 1rem;
+    }
+
+    .demo-video-frame:hover {
+        transform: none;
     }
     
     /* Features Section */
