@@ -753,38 +753,46 @@ section[id] {
         0 0 0 2px var(--accent-color);
 }
 
-.pricing-shine {
+.pricing-card-accent {
     position: absolute;
     top: 0;
     right: 0;
-    width: 140px;
-    height: 140px;
-    background: linear-gradient(
-        135deg,
-        rgba(255, 255, 255, 0.55) 0%,
-        rgba(255, 255, 255, 0.15) 35%,
-        transparent 65%
-    );
+    width: 5rem;
+    height: 5rem;
     pointer-events: none;
     z-index: 1;
+    border-top-right-radius: inherit;
+}
+
+.pricing-shine {
+    position: absolute;
+    inset: 0;
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+    background: linear-gradient(
+        225deg,
+        rgba(255, 255, 255, 0.5) 0%,
+        rgba(255, 255, 255, 0.18) 45%,
+        transparent 75%
+    );
 }
 
 .pricing-ribbon {
     position: absolute;
-    top: 1.35rem;
-    right: -2.75rem;
-    width: 10.5rem;
-    padding: 0.4rem 0;
+    top: 1.15rem;
+    right: -2.1rem;
+    width: 8.5rem;
+    padding: 0.35rem 0;
     background: linear-gradient(135deg, var(--accent-color), #e8f030);
     color: var(--primary-color);
-    font-size: 0.7rem;
+    font-size: 0.62rem;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.07em;
     text-align: center;
     transform: rotate(45deg);
+    box-shadow: 0 2px 8px rgba(1, 43, 39, 0.2);
     z-index: 3;
-    box-shadow: 0 2px 10px rgba(1, 43, 39, 0.25);
+    pointer-events: none;
 }
 
 .pricing-logo {
@@ -837,17 +845,38 @@ section[id] {
 
 
 .price {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.35rem;
     font-size: 2.5rem;
     font-weight: 700;
+    line-height: 1.1;
     color: white;
     margin: 0.75rem 0;
     position: relative;
     z-index: 2;
 }
 
-.price span {
-    font-size: 1rem;
-    color: rgba(255, 255, 255, 0.8);
+.price-value {
+    display: inline-flex;
+    align-items: baseline;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+}
+
+.price-amount {
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+}
+
+.price-period {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.75);
 }
 
 .pricing-card li {
@@ -1328,10 +1357,6 @@ section[id] {
 
     .price {
         font-size: 2.25rem;
-    }
-    
-    .price {
-        font-size: 2rem;
     }
     
     /* FAQ Section */
