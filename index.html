@@ -162,18 +162,63 @@
 
         <section id="pricing" class="pricing">
             <h2>Simple, Transparent Pricing</h2>
-            <p style="text-align: center; margin-bottom: 2rem; color: var(--light-text); font-size: 1.1rem;">Pay per contract based on document length</p>
+            <p class="pricing-intro">Subscription plans built for every practice size</p>
+
+            <div class="billing-toggle" role="group" aria-label="Billing period">
+                <span class="billing-label billing-label-monthly active">Monthly</span>
+                <label class="billing-switch">
+                    <input type="checkbox" id="billing-toggle" aria-label="Switch to yearly billing">
+                    <span class="billing-slider"></span>
+                </label>
+                <span class="billing-label billing-label-yearly">Yearly</span>
+                <span class="billing-save-badge">Save 10%</span>
+            </div>
+            <p class="billing-save-note" id="billing-save-note" hidden>Pay yearly and save 10% compared to monthly billing.</p>
+
             <div class="pricing-grid">
                 <div class="pricing-card">
-                    <img src="convex_logo.png" alt="Convex" class="pricing-logo">
-                    <h3>Contract Review</h3>
-                    <div class="price">$29.73<span>/contract</span></div>
+                    <h3>Small</h3>
+                    <p class="pricing-tier-desc">For solo practitioners</p>
+                    <div class="price" data-monthly="145" data-yearly="1595">
+                        $<span class="price-amount">145</span><span class="price-period">/month</span>
+                    </div>
                     <ul>
-                        <li>Client-ready output letter</li>
+                        <li>Client-ready output letters</li>
+                        <li>Risk traffic light reports</li>
                         <li>Email and phone support</li>
-                        <li>Risk Traffic Light Report included</li>
-                        <li>Review up to 150 pages</li>
-                        <li>$5 per extra 100 pages</li>
+                        <li>OCR for scanned PDFs</li>
+                    </ul>
+                    <a href="https://app.convex.au/auth/register" class="primary-button">Get Started</a>
+                </div>
+
+                <div class="pricing-card pricing-card-featured">
+                    <div class="pricing-shine" aria-hidden="true"></div>
+                    <div class="pricing-ribbon">Most Popular</div>
+                    <h3>Medium</h3>
+                    <p class="pricing-tier-desc">For growing practices</p>
+                    <div class="price" data-monthly="595" data-yearly="6495">
+                        $<span class="price-amount">595</span><span class="price-period">/month</span>
+                    </div>
+                    <ul>
+                        <li>Everything in Small</li>
+                        <li>Bulk contract uploads</li>
+                        <li>Custom letterhead branding</li>
+                        <li>Priority support</li>
+                    </ul>
+                    <a href="https://app.convex.au/auth/register" class="primary-button">Get Started</a>
+                </div>
+
+                <div class="pricing-card">
+                    <h3>Large</h3>
+                    <p class="pricing-tier-desc">For high-volume firms</p>
+                    <div class="price" data-monthly="1495" data-yearly="16495">
+                        $<span class="price-amount">1,495</span><span class="price-period">/month</span>
+                    </div>
+                    <ul>
+                        <li>Everything in Medium</li>
+                        <li>Highest review capacity</li>
+                        <li>Team-ready workflow</li>
+                        <li>Dedicated account support</li>
                     </ul>
                     <a href="https://app.convex.au/auth/register" class="primary-button">Get Started</a>
                 </div>
@@ -491,6 +536,49 @@
         </div>
     </footer>
     <script>
+      // Billing period toggle
+      const billingToggle = document.getElementById('billing-toggle');
+      const billingSaveNote = document.getElementById('billing-save-note');
+      const billingLabelMonthly = document.querySelector('.billing-label-monthly');
+      const billingLabelYearly = document.querySelector('.billing-label-yearly');
+
+      function formatPrice(value) {
+        return Number(value).toLocaleString('en-AU');
+      }
+
+      function updatePricing(isYearly) {
+        document.querySelectorAll('.pricing-card .price').forEach(function(priceEl) {
+          const amountEl = priceEl.querySelector('.price-amount');
+          const periodEl = priceEl.querySelector('.price-period');
+          const monthly = priceEl.dataset.monthly;
+          const yearly = priceEl.dataset.yearly;
+
+          if (isYearly) {
+            amountEl.textContent = formatPrice(yearly);
+            periodEl.textContent = '/year';
+          } else {
+            amountEl.textContent = formatPrice(monthly);
+            periodEl.textContent = '/month';
+          }
+        });
+
+        if (billingLabelMonthly) {
+          billingLabelMonthly.classList.toggle('active', !isYearly);
+        }
+        if (billingLabelYearly) {
+          billingLabelYearly.classList.toggle('active', isYearly);
+        }
+        if (billingSaveNote) {
+          billingSaveNote.hidden = !isYearly;
+        }
+      }
+
+      if (billingToggle) {
+        billingToggle.addEventListener('change', function() {
+          updatePricing(billingToggle.checked);
+        });
+      }
+
       // Mobile menu toggle
       const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
       const navLinks = document.querySelector('.nav-links');
