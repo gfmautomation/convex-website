@@ -778,10 +778,11 @@ section[id] {
 
 .pricing-ribbon {
     position: absolute;
-    top: 1.25rem;
-    right: -2.35rem;
-    width: 10rem;
-    padding: 0.55rem 1.25rem;
+    top: 1.35rem;
+    right: -2.85rem;
+    width: auto;
+    min-width: 12rem;
+    padding: 0.7rem 2.75rem;
     background: linear-gradient(135deg, var(--accent-color), #e8f030);
     color: var(--primary-color);
     font-size: 0.78rem;
@@ -789,6 +790,7 @@ section[id] {
     text-transform: uppercase;
     letter-spacing: 0.07em;
     text-align: center;
+    white-space: nowrap;
     transform: rotate(45deg);
     box-shadow: 0 2px 8px rgba(1, 43, 39, 0.2);
     z-index: 3;
