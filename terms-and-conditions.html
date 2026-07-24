@@ -38,8 +38,9 @@
         <div class="terms-container">
             <div class="terms-header">
                 <h1>Terms and Conditions of Use – Convex</h1>
-                <p>Last Updated: 30 March 2026</p>
+                <p>Last Updated: [Effective Date]</p>
                 <p>These Terms and Conditions ("Terms") govern the access to and use of the Convex AI contract-review platform ("Convex", "the Service"), operated by Convex Legal Pty Ltd (ABN 87 692 237 577) trading as Convex AI ("we", "our" or "us"). By creating an account, accessing the platform, or using the Service in any manner, you acknowledge that you have read, understood and agree to be bound by these Terms. If you do not accept these Terms, you must not use the Service.</p>
+                <!-- [ADDED] Effective Date placeholder; billing model switched from PAYG to subscription + credits. -->
             </div>
 
             <div class="terms-content">
@@ -73,55 +74,142 @@
                 <p><strong>17.</strong> If you are subject to document retention rules (including those applicable to lawyers and conveyancers), you must ensure that you maintain your own independent records and backups.</p>
                 <p><strong>18.</strong> Convex does not guarantee archival storage, long-term preservation or retrieval of your documents beyond their presence within your account.</p>
 
-                <h2>G. Fees, Credits and Payment</h2>
-                <p><strong>19.</strong> Convex operates on a pay-per-contract pricing model. To review a contract, users must purchase credits in advance, with each contract review costing $29.73 (inclusive of GST). The Service will not process a contract review unless payment has been successfully made.</p>
-                <p><strong>20.</strong> Upon creating an account, each new user receives 3 complimentary credits, which may be used in accordance with the functionality available on the platform.</p>
-                
-                <h2>H. MVP and Pilot Billing</h2>
-                <p><strong>21.</strong> During any early access, pilot, beta or minimum viable product (MVP) phase (as determined by Convex), Convex may permit users to access paid features of the Service before payment is collected.</p>
-                <p><strong>22.</strong> Where a user consumes contract reviews beyond their complimentary credits during such a phase, Convex may issue an invoice at the end of the relevant billing period (typically monthly) for the number of contract reviews used.</p>
-                <p><strong>23.</strong> By continuing to use the Service beyond the complimentary credits, you authorise Convex to invoice you for such usage in accordance with the pricing disclosed on the platform or otherwise notified to you.</p>
-                <p><strong>24.</strong> There are no setup fees, no minimum usage commitments and no subscription requirements. We may amend our pricing at any time, and any changes will apply to future purchases only.</p>
+                <!-- ============================================================
+                     [MATERIAL CHANGE] Sections G–H fully rewritten.
+                     Former G (pay-per-contract / prepaid credits / $29.73) REMOVED.
+                     Former H (MVP/pilot deferred PAYG invoicing; "no subscription
+                     requirements") REMOVED in full. No PAYG grandfathering.
+                     ============================================================ -->
+                <h2>G. Fees, Subscriptions and Credits</h2>
 
-                <h2>I. Refunds and Australian Consumer Law</h2>
-                <p><strong>25.</strong> To the extent permitted by the Australian Consumer Law (ACL), Convex does not offer refunds for change of mind or dissatisfaction with the style, format or content of any output.</p>
-                <p><strong>26.</strong> Our goods and services come with guarantees that cannot be excluded under the ACL. However, where permitted, our liability is limited to refunding the amount paid for the relevant service.</p>
+                <p><strong>19. Supersession of prior pay-as-you-go terms.</strong> From <strong>[Effective Date]</strong>, any prior pay-as-you-go, pay-per-contract, prepaid single-review, complimentary-allowance-only, or “unlimited reviews once you become a paying customer” billing terms no longer apply (subject always to the Australian Consumer Law). All access to portal contract reviews under these Terms is solely under the subscription and credit model described in this Section G.</p>
 
-                <h2>J. Prohibited Conduct</h2>
-                <p><strong>27.</strong> You must use the Service lawfully and in accordance with these Terms. You must not upload documents that you are not legally entitled to share, nor may you use the platform to transmit malicious code, attempt to breach system security, or interfere with the proper functioning of the Service.</p>
-                <p><strong>28.</strong> You must not attempt to reverse engineer, replicate, deconstruct or extract any part of Convex's system logic, prompts, workflow, architecture or proprietary processing methods. You must not attempt to translate outputs or interface structures into competing or derivative tools. Any behaviour that intentionally degrades, overloads or disrupts the Service is strictly prohibited.</p>
+                <p><strong>Plain-language summary (billing).</strong> Please read the full clauses below. In short:</p>
+                <ul>
+                    <li>Portal contract reviews require an <strong>active</strong> or <strong>trialing</strong> subscription on a Small, Medium or Large plan <strong>and</strong> remaining credits.</li>
+                    <li>Plans are <strong>monthly or yearly</strong>. Prices are as displayed at checkout / billing UI / Stripe at the time of purchase (AUD).</li>
+                    <li>Each billing cycle you receive a fixed credit grant for your plan. <strong>Credits do not roll over</strong> — on each successful paid subscription invoice while your subscription is active, remaining credits expire and a fresh cycle grant is issued.</li>
+                    <li>First-time subscribers may receive a <strong>7-day trial with 5 trial credits</strong>. Resubscribers who previously held a subscription plan do not automatically get another trial.</li>
+                    <li>You may buy optional <strong>adhoc credit packs</strong> while active or trialing; those credits also expire on the next paid cycle reset.</li>
+                    <li>Cancellation takes effect at the <strong>end of the billing period</strong>. After the subscription ends, you cannot run reviews even if residual credits appear in the ledger.</li>
+                    <li>If payment fails, reviews are blocked until the subscription returns to good standing — leftover credits do not override status.</li>
+                </ul>
 
-                <h2>K. Intellectual Property</h2>
-                <p><strong>29.</strong> All intellectual property rights in the Service, including the platform's architecture, software, algorithms, models, prompts, workflows, design elements, user interface, templates, documentation, trade dress and underlying technology, are owned exclusively by Convex Legal Pty Ltd. No licence or right is granted to you except to the extent necessary for you to use the Service strictly in accordance with these Terms.</p>
-                <p><strong>30.</strong> You retain ownership of the documents you upload. Any outputs produced by the Service may be used only for the purpose of delivering a review of the contract you uploaded in that matter. By uploading content, you grant us a limited, non-exclusive licence to process the content for the purpose of delivering the Service and improving system performance in de-identified form.</p>
-                <p><strong>31.</strong> Any unauthorised use of Convex's intellectual property, including attempts to copy, adapt, commercialise or create derivative works, may result in termination of your account and potential legal action.</p>
+                <p><strong>20. Access gating.</strong> Users without an active or trialing subscription on a Small, Medium or Large plan cannot run portal contract reviews on the Service. Subject to any administrative exception Convex may grant in writing or via the product, a portal contract review may be started only if all of the following apply: (a) you are on a Small, Medium or Large plan; (b) your subscription status is <em>trialing</em> or <em>active</em>; and (c) your remaining credit balance is greater than zero.</p>
 
-                <h2>L. Availability and Performance</h2>
-                <p><strong>32.</strong> The Service is provided on an "as is" and "as available" basis. While we aim to maintain high levels of availability, we do not represent or warrant that access to the platform will be uninterrupted, free from errors, or secure from disruption.</p>
-                <p><strong>33.</strong> System updates, improvements, outages, third-party issues or unforeseen events may affect availability. We reserve the right to modify, suspend or discontinue any aspect of the Service at any time without liability.</p>
+                <p><strong>21. Plans and billing cadence.</strong> Convex offers subscription plans designated <strong>Small</strong>, <strong>Medium</strong> and <strong>Large</strong>, available on a <strong>monthly</strong> or <strong>yearly</strong> billing cadence (as selected by you and configured in Stripe). Subscriptions renew automatically on the chosen cadence until cancelled in accordance with these Terms and the billing interface.</p>
 
-                <h2>M. Limitation of Liability</h2>
-                <p><strong>34.</strong> To the fullest extent permitted by law, Convex excludes all liability for indirect, incidental, special, exemplary or consequential loss, including loss of profits, loss of opportunity, loss of data, business interruption or reputational damage, whether arising in contract, tort, equity or otherwise.</p>
-                <p><strong>35.</strong> Convex is not responsible for errors or omissions in outputs, nor for any consequences arising from your reliance on them without appropriate professional review.</p>
-                <p><strong>36.</strong> In all circumstances, our total liability to you for any claim arising out of or related to the Service is limited to the total amount paid by you for the Service in the twelve (12) months preceding the claim. Nothing in these Terms limits any rights or remedies available to you under the ACL that cannot be lawfully excluded.</p>
+                <p><strong>22. Prices and currency.</strong> All fees are in Australian dollars (AUD) and, where applicable, inclusive or exclusive of GST as disclosed at checkout or on the relevant Stripe invoice. Subscription and adhoc credit prices are those displayed at checkout, in the Convex billing interface, and/or in Stripe at the time of purchase — <strong>[Price as displayed at checkout]</strong>. We do not guarantee that website marketing copy matches live Stripe prices; the amount charged is the amount confirmed in Stripe at purchase.</p>
 
-                <h2>N. Indemnity</h2>
-                <p><strong>37.</strong> You agree to indemnify and hold harmless Convex Legal Pty Ltd, its directors, employees, contractors and affiliates from all claims, liabilities, losses, costs and expenses (including legal costs on a full indemnity basis) arising out of your misuse of the Service, your reliance on outputs without appropriate professional review, your breach of these Terms, or any content you upload.</p>
+                <p><strong>23. Payment processor.</strong> Payments are processed by Stripe. Invoices, payment methods, receipts and the Stripe Customer Portal (where enabled) are accessed via Convex billing. By subscribing or purchasing credits, you authorise Stripe to charge your nominated payment method for recurring subscription fees and any adhoc credit purchases you initiate.</p>
 
-                <h2>O. Termination</h2>
-                <p><strong>38.</strong> We may suspend or terminate your access to the Service if we consider that you have breached these Terms, misused the platform, compromised system integrity, or acted inconsistently with the intended use of the Service. You may cease using the Service at any time. Upon termination, we may retain your account information for administrative purposes, but you may request deletion of your uploaded documents in accordance with our data handling processes.</p>
+                <p><strong>24. Credits per billing cycle.</strong> Subject to the trial rules in clause 28, while your subscription is active and on each successful paid subscription invoice for a new billing cycle, Convex grants credits for your then-current plan and cadence as follows:</p>
+                <table class="terms-table" style="width:100%; border-collapse:collapse; margin:1rem 0;">
+                    <thead>
+                        <tr>
+                            <th style="text-align:left; border-bottom:1px solid currentColor; padding:0.4rem 0.5rem;">Plan</th>
+                            <th style="text-align:left; border-bottom:1px solid currentColor; padding:0.4rem 0.5rem;">Monthly grant</th>
+                            <th style="text-align:left; border-bottom:1px solid currentColor; padding:0.4rem 0.5rem;">Yearly grant (full amount at cycle start)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="padding:0.4rem 0.5rem;">Small</td>
+                            <td style="padding:0.4rem 0.5rem;">5</td>
+                            <td style="padding:0.4rem 0.5rem;">60</td>
+                        </tr>
+                        <tr>
+                            <td style="padding:0.4rem 0.5rem;">Medium</td>
+                            <td style="padding:0.4rem 0.5rem;">15</td>
+                            <td style="padding:0.4rem 0.5rem;">180</td>
+                        </tr>
+                        <tr>
+                            <td style="padding:0.4rem 0.5rem;">Large</td>
+                            <td style="padding:0.4rem 0.5rem;">30</td>
+                            <td style="padding:0.4rem 0.5rem;">360</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>For yearly plans, the full yearly grant is issued at the start of the yearly cycle. Unused yearly credits still clear at the next paid cycle reset under clause 30.</p>
 
-                <h2>P. Amendments to Terms</h2>
-                <p><strong>39.</strong> We may update or amend these Terms from time to time to reflect changes in the Service, legal obligations or business requirements. If material changes are made, we will endeavour to notify users through the platform or by email. Continued use of the Service following any update constitutes acceptance of the revised Terms.</p>
+                <p><strong>25. What a credit buys.</strong> One (1) credit equals one (1) portal contract review started on the Service. Generation of letters and traffic-light reports associated with a review does not consume additional credits. Credits have no cash value, are non-transferable, and may be used only on the Service (subject to applicable law).</p>
 
-                <h2>Q. Governing Law</h2>
-                <p><strong>40.</strong> These Terms are governed by the laws of New South Wales, and you submit to the exclusive jurisdiction of the courts of that State for the resolution of any dispute arising in connection with the Service or these Terms.</p>
+                <p><strong>26. Failed or incomplete reviews.</strong> Under Convex’s credit ledger product rules, a failed or not-successfully-completed review may be treated so that the credit is not permanently consumed. Those rules are product configuration rules, not a service level agreement, and Convex may adjust ledger treatment for fraud, abuse or error correction.</p>
 
-                <h2>R. Contact</h2>
-                <p><strong>41.</strong> If you have any questions regarding these Terms, you may contact us through our online enquiry form, which can be accessed at: <a href="index.html#contact">Contact Us</a></p>
+                <p><strong>27. No complimentary signup allowance outside trial.</strong> Except for trial credits under clause 28 (and any administrative exception Convex may grant), creating an account alone does not entitle you to free or complimentary credits, and there is no “become a paying customer and receive unlimited reviews” entitlement.</p>
+
+                <!-- [ADDED] Trial — first-time subscribers only -->
+                <p><strong>28. Trial (first-time subscribers).</strong></p>
+                <ul>
+                    <li>First-time subscribers who have not previously held a Convex subscription plan may receive a Stripe trial of <strong>seven (7) days</strong> (or such other duration as Convex configures and discloses at checkout) on commencing a subscription.</li>
+                    <li>On trial start, Convex grants <strong>five (5) trial credits</strong>.</li>
+                    <li>A $0 trial invoice does <strong>not</strong> grant the full plan cycle credit amount for the selected plan.</li>
+                    <li>Resubscribers who previously held a subscription plan do <strong>not</strong> automatically receive another trial or another grant of trial credits.</li>
+                    <li>After the trial, on the first successful paid subscription invoice, Convex expires remaining credits (including unused trial credits) and then grants the full cycle amount for the selected plan and cadence in accordance with clauses 24 and 30.</li>
+                </ul>
+
+                <p><strong>29. Renewals.</strong> Subscriptions renew automatically via Stripe Billing on the chosen monthly or yearly cadence until cancelled under clause 33. You are responsible for ensuring a valid payment method remains on file.</p>
+
+                <!-- [PROMINENT DISCLOSURE] No rollover / cycle reset -->
+                <p><strong>30. Credit expiry — no rollover.</strong> <em>Credits do not roll over.</em> On each successful paid subscription invoice while your subscription status is <em>active</em>, Convex will: (a) expire all remaining credits in your balance (including unused trial credits, unused plan-grant credits, and unused adhoc credits); and then (b) grant a fresh full cycle credit amount for your then-current plan and cadence. There is no mid-cycle calendar expiry of credits by itself; the reset is tied to successful paid billing-cycle events. This no-rollover rule applies equally to yearly plans: unused yearly credits clear at the next paid cycle reset.</p>
+
+                <!-- [ADDED] Adhoc extra credits -->
+                <p><strong>31. Adhoc extra credits.</strong> While your subscription status is <em>active</em> or <em>trialing</em>, you may purchase one-off adhoc credit packs via Stripe (currently between 1 and 100 credits per purchase, or such other range as shown in the product). The unit price is the then-current Stripe adhoc price shown in the product at purchase. Adhoc credits are added to the same credit balance and <strong>expire on the next paid cycle reset under clause 30</strong> (no rollover).</p>
+
+                <!-- [ADDED] Plan changes -->
+                <p><strong>32. Plan and cadence changes.</strong> You may change plan and/or billing cadence in the Convex billing interface and/or the Stripe Customer Portal (where enabled). In-app changes generally take effect as shown in the billing interface, typically from the next paid billing period; your current entitlements continue until then. The current product behaviour is that such updates are <strong>not prorated</strong> (no immediate prorated charges or credits on those updates), except as Stripe or the billing interface expressly displays at the time of the change.</p>
+
+                <!-- [ADDED] Cancellation -->
+                <p><strong>33. Cancellation.</strong> You may cancel your subscription so that it ends at the end of the then-current billing period (cancel-at-period-end), via the Convex billing interface and/or Stripe Customer Portal (where enabled). Cancellation does not immediately end paid access. Access and the ability to use remaining credits continue while your status remains <em>active</em> or <em>trialing</em> until the period ends. Once the subscription has ended and your status is no longer <em>active</em> or <em>trialing</em>, you cannot start portal contract reviews, even if the credit ledger still shows residual credits. A scheduled cancellation may be resumed before the period ends where the product permits. If you later resubscribe after previously holding a subscription plan, a trial is not automatically re-offered (see clause 28).</p>
+
+                <!-- [ADDED] Payment failure -->
+                <p><strong>34. Payment failure.</strong> If a renewal payment fails, your subscription may enter a past_due or other non-eligible status as determined by Stripe and Convex’s access rules. Portal contract reviews are blocked unless status is <em>active</em> or <em>trialing</em>, regardless of any leftover credit balance. You may restore access via the billing / Stripe Customer Portal when Stripe returns the subscription to good standing.</p>
+
+                <p><strong>35. Pricing changes.</strong> We may amend subscription prices, adhoc credit prices, plan credit grants, trial configuration, or related billing features from time to time. <!-- [[LEGAL/COMMERCIAL TODO]] notice period for material price/term changes --> Changes generally apply to future billing cycles or future purchases as disclosed in the billing interface or Stripe; they do not retrospectively alter amounts already successfully charged for a completed paid period, except as required by law.</p>
+
+                <p><strong>36. Separate offerings.</strong> If Convex offers public or buyer one-off paid uploads or other non-subscription products, those may be charged separately via Stripe and are not subscription credits. Separate terms may apply to those offerings.</p>
+
+                <h2>H. Refunds and Australian Consumer Law</h2>
+                <!-- [RETAINED with minor alignment] Former cl 25–26; refund policy for unused credits / trial / mid-cycle still open — see TODO -->
+                <p><strong>37.</strong> To the extent permitted by the Australian Consumer Law (ACL), Convex does not offer refunds for change of mind or dissatisfaction with the style, format or content of any output. <!-- [[LEGAL/COMMERCIAL TODO]] Confirm policy for: unused subscription period after cancel; unused credits (including adhoc); trial cancellation; mistaken adhoc purchase; residual credit value after subscription ends. --> </p>
+                <p><strong>38.</strong> Our goods and services come with guarantees that cannot be excluded under the ACL. Nothing in these Terms excludes, restricts or modifies any consumer guarantee, right or remedy under the ACL that cannot lawfully be excluded. Where permitted by law, and without limiting the ACL, our liability for failure to comply with a consumer guarantee is limited to supplying the services again or paying the cost of having the services supplied again, or to refunding the amount paid for the relevant service, as Convex chooses (where the ACL allows that choice).</p>
+
+                <h2>I. Prohibited Conduct</h2>
+                <p><strong>39.</strong> You must use the Service lawfully and in accordance with these Terms. You must not upload documents that you are not legally entitled to share, nor may you use the platform to transmit malicious code, attempt to breach system security, or interfere with the proper functioning of the Service.</p>
+                <p><strong>40.</strong> You must not attempt to reverse engineer, replicate, deconstruct or extract any part of Convex's system logic, prompts, workflow, architecture or proprietary processing methods. You must not attempt to translate outputs or interface structures into competing or derivative tools. Any behaviour that intentionally degrades, overloads or disrupts the Service is strictly prohibited.</p>
+
+                <h2>J. Intellectual Property</h2>
+                <p><strong>41.</strong> All intellectual property rights in the Service, including the platform's architecture, software, algorithms, models, prompts, workflows, design elements, user interface, templates, documentation, trade dress and underlying technology, are owned exclusively by Convex Legal Pty Ltd. No licence or right is granted to you except to the extent necessary for you to use the Service strictly in accordance with these Terms.</p>
+                <p><strong>42.</strong> You retain ownership of the documents you upload. Any outputs produced by the Service may be used only for the purpose of delivering a review of the contract you uploaded in that matter. By uploading content, you grant us a limited, non-exclusive licence to process the content for the purpose of delivering the Service and improving system performance in de-identified form.</p>
+                <p><strong>43.</strong> Any unauthorised use of Convex's intellectual property, including attempts to copy, adapt, commercialise or create derivative works, may result in termination of your account and potential legal action.</p>
+
+                <h2>K. Availability and Performance</h2>
+                <p><strong>44.</strong> The Service is provided on an "as is" and "as available" basis. While we aim to maintain high levels of availability, we do not represent or warrant that access to the platform will be uninterrupted, free from errors, or secure from disruption.</p>
+                <p><strong>45.</strong> System updates, improvements, outages, third-party issues or unforeseen events may affect availability. We reserve the right to modify, suspend or discontinue any aspect of the Service at any time without liability.</p>
+
+                <h2>L. Limitation of Liability</h2>
+                <p><strong>46.</strong> To the fullest extent permitted by law, Convex excludes all liability for indirect, incidental, special, exemplary or consequential loss, including loss of profits, loss of opportunity, loss of data, business interruption or reputational damage, whether arising in contract, tort, equity or otherwise.</p>
+                <p><strong>47.</strong> Convex is not responsible for errors or omissions in outputs, nor for any consequences arising from your reliance on them without appropriate professional review.</p>
+                <p><strong>48.</strong> In all circumstances, our total liability to you for any claim arising out of or related to the Service is limited to the total amount paid by you for the Service in the twelve (12) months preceding the claim. Nothing in these Terms limits any rights or remedies available to you under the ACL that cannot be lawfully excluded.</p>
+
+                <h2>M. Indemnity</h2>
+                <p><strong>49.</strong> You agree to indemnify and hold harmless Convex Legal Pty Ltd, its directors, employees, contractors and affiliates from all claims, liabilities, losses, costs and expenses (including legal costs on a full indemnity basis) arising out of your misuse of the Service, your reliance on outputs without appropriate professional review, your breach of these Terms, or any content you upload.</p>
+
+                <h2>N. Termination</h2>
+                <!-- [UPDATED] Align voluntary exit with cancel-at-period-end; residual credits -->
+                <p><strong>50.</strong> We may suspend or terminate your access to the Service if we consider that you have breached these Terms, misused the platform, compromised system integrity, or acted inconsistently with the intended use of the Service. You may stop using the Service and cancel your subscription in accordance with clause 33. Upon termination or expiry of a subscription, residual credits do not confer a right to continue portal contract reviews once status is no longer <em>active</em> or <em>trialing</em>. Upon termination, we may retain your account information for administrative purposes, but you may request deletion of your uploaded documents in accordance with our data handling processes.</p>
+
+                <h2>O. Amendments to Terms</h2>
+                <p><strong>51.</strong> We may update or amend these Terms from time to time to reflect changes in the Service, legal obligations or business requirements. If material changes are made, we will endeavour to notify users through the platform or by email. <!-- [[LEGAL/COMMERCIAL TODO]] Specify minimum notice period for material billing-term changes if required by policy. --> Continued use of the Service following any update constitutes acceptance of the revised Terms.</p>
+
+                <h2>P. Governing Law</h2>
+                <p><strong>52.</strong> These Terms are governed by the laws of New South Wales, and you submit to the exclusive jurisdiction of the courts of that State for the resolution of any dispute arising in connection with the Service or these Terms.</p>
+
+                <h2>Q. Contact</h2>
+                <p><strong>53.</strong> If you have any questions regarding these Terms, you may contact us through our online enquiry form, which can be accessed at: <a href="index.html#contact">Contact Us</a></p>
 
                 <div class="last-updated">
-                    <p><strong>Last Updated:</strong> 30 March 2026</p>
+                    <p><strong>Last Updated:</strong> [Effective Date]</p>
                 </div>
             </div>
         </div>
