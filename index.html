@@ -1,697 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-AU">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="referrer" content="strict-origin-when-cross-origin">
-    <title>Convex - Australian Property Contract Review Platform</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Convex | AI Contract Review for NSW Conveyancers and Property Lawyers</title>
+<meta name="description" content="AI contract review for NSW conveyancers and lawyers. Residential, strata, off-the-plan, unregistered land, house and land and commercial contracts, reviewed through your client's purchaser profile.">
+<link rel="canonical" href="https://www.convex.au/">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Convex">
+<meta property="og:title" content="Convex | AI Contract Review for NSW Conveyancers and Property Lawyers"><meta property="og:description" content="AI contract review for NSW conveyancers and lawyers. Residential, strata, off-the-plan, unregistered land, house and land and commercial contracts, reviewed through your client's purchaser profile.">
+<meta property="og:url" content="https://www.convex.au/"><meta property="og:image" content="https://www.convex.au/convex_logo.png">
+<meta name="twitter:card" content="summary">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "Convex", "legalName": "Convex Legal Pty Ltd", "url": "https://www.convex.au/", "logo": "https://www.convex.au/convex_logo.png", "email": "info@convex.au", "telephone": "+61406522627", "areaServed": "New South Wales, Australia"}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Convex", "applicationCategory": "BusinessApplication", "operatingSystem": "Web", "description": "AI contract review for NSW conveyancers and lawyers. Residential, strata, off-the-plan, unregistered land, house and land and commercial contracts, reviewed through your client's purchaser profile.", "url": "https://www.convex.au/", "offers": {"@type": "AggregateOffer", "priceCurrency": "AUD", "lowPrice": "145", "highPrice": "1495", "offerCount": "3"}}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is Convex?", "acceptedAnswer": {"@type": "Answer", "text": "Convex is an AI contract review platform for NSW conveyancers and property lawyers. Enter the matter details, choose the purchaser lens and upload the contract. Convex returns a green, amber and red traffic light report and a client-ready letter in Word and PDF."}}, {"@type": "Question", "name": "Which NSW contracts can Convex review?", "acceptedAnswer": {"@type": "Answer", "text": "Established residential, existing strata, off-the-plan strata, unregistered land, the land contract in a house and land package, and commercial contracts of sale. The building contract in a house and land package is not reviewed."}}, {"@type": "Question", "name": "What is a purchaser lens?", "acceptedAnswer": {"@type": "Answer", "text": "A lens tells Convex who the buyer is and what they intend to do with the property: owner-occupier (upgrader, downsizer or first home buyer), investor (own name, trust or SMSF), and whether they intend to develop. If you do not know yet, choose \"Not sure yet\" and Convex applies a balanced default. Every clause is still reviewed. The lens decides what is prioritised and how the letter is framed."}}, {"@type": "Question", "name": "Who built Convex?", "acceptedAnswer": {"@type": "Answer", "text": "Zohra Ali, a NSW property lawyer admitted in 2015 and Principal of Corporate Legal, designed Convex with a team of software engineers. Corporate Legal uses Convex on its own contract reviews."}}, {"@type": "Question", "name": "How long does a review take?", "acceptedAnswer": {"@type": "Answer", "text": "Usually 3 to 5 minutes from upload, including long contracts and scanned PDFs."}}, {"@type": "Question", "name": "Can I try it first?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. New subscribers receive a 7-day trial with 5 review credits."}}]}</script>
 </head>
 <body>
-    <header class="header">
-        <nav class="nav-container">
-            <div class="logo">
-                <a href="#">
-                    <img src="convex_logo.png" alt="Convex" class="logo-image">
-                </a>
-            </div>
-            <button class="mobile-menu-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-links">
-                <li><a href="#features">Features</a></li>
-                <li><a href="#how-it-works">How It Works</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#FAQ">FAQs</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-                <li><a href="https://app.convex.au/auth/register" class="cta-button">Get Started</a></li>
-                <li><a href="https://app.convex.au/auth/login" class="sign-in-button">Sign in</a></li>
-            </ul>
-        </nav>
-    </header>
+<header class="header"><div class="wrap nav">
+<a class="logo" href="index.html" aria-label="Convex home"><img src="convex_logo.png" alt="Convex" width="520" height="380"></a>
+<button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+<ul class="nav-links" id="nav-links"><li><a href="how-it-works.html" data-nav="how">How it works</a></li><li><a href="contracts-we-review.html" data-nav="contracts">Contracts</a></li><li><a href="purchaser-profiles.html" data-nav="lens">Purchaser lenses</a></li><li><a href="why-convex.html" data-nav="why">Why Convex</a></li><li><a href="pricing.html" data-nav="pricing">Pricing</a></li><li><a href="faq.html" data-nav="faq">FAQs</a></li>
+<li><a class="btn btn-sm btn-ghost-light" href="https://app.convex.au/auth/login">Sign in</a></li>
+<li><a class="btn btn-sm" href="https://app.convex.au/auth/register">Start trial</a></li></ul>
+</div></header>
+<main id="main">
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">AI contract review for NSW conveyancers and property lawyers</span>
+      <h1>Every NSW contract, reviewed through <em>your client's</em> lens.</h1>
+      <p class="lead">Convex reads the contract and every document attached to it, scores each issue green, amber or red, and drafts a client-ready letter framed for the buyer in front of you.</p>
+      <div class="btn-row">
+        <a class="btn" href="https://app.convex.au/auth/register">Start your 7-day trial</a>
+        <a class="btn btn-ghost-light" href="how-it-works.html">See how it works</a>
+      </div>
+      <div class="covers">
+  <div><span class="covers-lbl">Every NSW contract type</span>
+  <p>Residential and commercial, established and off-the-plan, strata, unregistered land and house and land.</p></div>
+  <div><span class="covers-lbl">Every kind of buyer</span>
+  <p>Owner-occupiers, first home buyers, investors, trusts, SMSFs and developers, with a balanced default when the buyer's plans are not yet known.</p></div>
+</div>
+    </div>
+    <div class="report" role="figure" aria-label="Sample Convex traffic light report"><div class="report-top"><b>Sample traffic light report</b><small>8 Example Avenue, Kellyville NSW - established house, tenanted</small><span class="lens-chip">Investor - SMSF | Develop: No</span></div><div class="report-tally"><div><span class="dot r"></span><b>2</b> Red</div><div><span class="dot a"></span><b>4</b> Amber</div><div><span class="dot g"></span><b>13</b> Green</div></div><ol><li><span class="dot r" aria-label="Red"></span><span class="t">Deposit released to the vendor before settlement</span><span class="ref">Special condition 32</span></li><li><span class="dot r" aria-label="Red"></span><span class="t">Directors to personally guarantee the purchaser</span><span class="ref">Special condition 38</span></li><li><span class="dot a" aria-label="Amber"></span><span class="t">Periodic tenancy at $640 per week</span><span class="ref">Tenancy agreement</span></li><li><span class="dot a" aria-label="Amber"></span><span class="t">Flood-related development controls apply</span><span class="ref">Planning certificate</span></li><li><span class="dot g" aria-label="Green"></span><span class="t">Vendor matches the registered proprietor</span><span class="ref">Title search</span></li></ol><div class="report-foot">Illustrative example. Each item is explained in plain English in the client letter.</div></div>
+  </div>
+</section>
 
-    <main>
-        <section class="hero">
-            <div class="hero-content">
-                <img src="convex_logo.png" alt="Convex" class="hero-logo">
-                <h1>Tired of spending too much time on property contract reviews?</h1>
-                <p>Make NSW contract reviews profitable again with Convex.</p>
-                <div class="hero-buttons">
-                    <a href="https://app.convex.au/auth/register" class="primary-button">Start Free Trial</a>
-                    <a href="#demo" class="secondary-button">Watch Demo</a>
-                </div>
-                <br>
-                <p class="hero-subtitle">AI-powered reviews for residential established dwellings in NSW</p>
-            </div>
-        </section>
+<section class="section tight founder-band"><div class="wrap"><div class="founder">
+  <div class="founder-id"><div class="avatar" aria-hidden="true">ZA</div><div><b>Zohra Ali</b><span>Principal, Corporate Legal<br>Admitted as a lawyer in 2015</span></div></div>
+  <div class="founder-text">
+    <span class="eyebrow">Built and used in practice</span>
+    <h2>Designed by a property lawyer who uses it on her own files</h2>
+    <p>Convex was designed by Zohra Ali, a NSW property lawyer with more than 10 years in conveyancing and the Principal of Corporate Legal. Convex reflects the standard she applies to her own clients' contracts.</p>
+    <p>Corporate Legal runs its contract reviews through Convex. The platform is tested on real matters every week, not only in a lab.</p>
+  </div>
+</div><div class="stats"><div><b>10+ years</b><span>in NSW property law</span></div><div><b>190+</b><span>reviews run at Corporate Legal</span></div><div><b>13,700+</b><span>contract pages reviewed</span></div><div><b>200+</b><span>Google reviews for Corporate Legal</span></div></div></div></section>
 
-        <section id="demo" class="demo-video">
-            <div class="demo-video-container">
-                <div class="demo-video-header">
-                    <h2>See Convex in Action</h2>
-                    <p class="demo-video-subtitle">A quick walkthrough of the platform</p>
-                </div>
-                <div class="demo-video-frame">
-                    <div class="video-wrapper">
-                        <iframe src="https://www.youtube-nocookie.com/embed/I1vtOY8HewA" title="Convex Demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" loading="lazy"></iframe>
-                    </div>
-                </div>
-            </div>
-        </section>
+<section class="section "><div class="wrap"><div class="head"><span class="eyebrow">Contract types</span><h2>One platform for every NSW contract you review</h2><p class="lead">Convex covers the residential and commercial contracts a NSW property practice sees every week.</p></div><div class="grid g3"><a class="card" href="nsw-residential-contract-review.html"><div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-5h4v5"/></svg></div><h3>Established residential</h3><p>Houses, townhouses, duplexes and vacant or tenanted homes on Torrens title.</p><span class="more">Read more &rarr;</span></a><a class="card" href="strata-contract-review.html"><div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="1"/><path d="M9 7h2M13 7h2M9 11h2M13 11h2M9 15h2M13 15h2"/></svg></div><h3>Strata</h3><p>Existing units and townhouses in a registered strata scheme, including by-laws and levies.</p><span class="more">Read more &rarr;</span></a><a class="card" href="off-the-plan-contract-review.html"><div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21h10"/><path d="M7 21V4l10 3"/><path d="M7 7h12"/><path d="M17 7v5"/><rect x="15" y="12" width="4" height="3"/></svg></div><h3>Off-the-plan</h3><p>Proposed strata lots with a disclosure statement, draft plan, sunset date and finishes schedule.</p><span class="more">Read more &rarr;</span></a><a class="card" href="unregistered-land-contract-review.html"><div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4L3 6v14l6-2 6 2 6-2V4l-6 2z"/><path d="M9 4v14M15 6v14"/></svg></div><h3>Unregistered land</h3><p>Proposed lots in a draft deposited plan, including design guidelines and draft 88B instruments.</p><span class="more">Read more &rarr;</span></a><a class="card" href="house-and-land-contract-review.html"><div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="15" r="4"/><path d="M11 12l9-9M17 6l3 3M15 8l2 2"/></svg></div><h3>House and land</h3><p>The land contract in a house and land package. The building contract is outside scope.</p><span class="more">Read more &rarr;</span></a><a class="card" href="commercial-contract-review.html"><div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9l1.5-5h13L20 9"/><path d="M4 9h16v2a3 3 0 0 1-5.3 2 3 3 0 0 1-5.4 0A3 3 0 0 1 4 11z"/><path d="M5 13v8h14v-8"/></svg></div><h3>Commercial</h3><p>Office, retail, industrial and mixed-use property, including GST, leases and permitted use.</p><span class="more">Read more &rarr;</span></a></div></div></section>
 
-        <section id="features" class="features">
-            <h2>Why Choose Convex?</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">⚡</div>
-                    <h3>Lightning Fast Reviews</h3>
-                    <p>Reduce review time by up to 80% with our advanced AI technology</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🎯</div>
-                    <h3>Precision Analysis</h3>
-                    <p>Identify potential issues and risks with pinpoint accuracy</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🔒</div>
-                    <h3>Secure</h3>
-                    <p>Legal-grade security so you know your client data is safe</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">📊</div>
-                    <h3>Smart Insights</h3>
-                    <p>Get detailed analytics for better decision-making</p>
-                </div>
-            </div>
-        </section>
+<section class="section ink"><div class="wrap"><div class="head"><span class="eyebrow">Purchaser lens packs</span><h2>The same contract means different things to different buyers</h2><p class="lead">A standard review scores a clause the same way for every client. Convex asks who is buying and why, and frames the review to match. Here is how 2 common items change with the lens.</p></div>
+<div class="grid g2">
+  <div class="card">
+    <span class="tag">Same clause</span>
+    <h3>"The purchaser takes title subject to the existing periodic tenancy."</h3>
+    <ul class="plain">
+      <li><strong>Owner-occupier:</strong> <span class="dot r"></span> Red. The client cannot move in on settlement. Vacant possession is not being given, and ending the tenancy depends on the notice rules for the tenant.</li>
+      <li><strong>Investor:</strong> <span class="dot g"></span> Green. An income-producing tenancy continues from day 1. The letter confirms the rent, bond transfer and adjustments instead.</li>
+    </ul>
+  </div>
+  <div class="card">
+    <span class="tag">Same certificate</span>
+    <h3>Planning certificate shows zone R2 Low Density Residential with a minimum lot size of 450 m&sup2;.</h3>
+    <ul class="plain">
+      <li><strong>Not developing:</strong> <span class="dot g"></span> Green. Noted for completeness. Nothing in the zoning restricts ordinary residential use.</li>
+      <li><strong>Intending to develop:</strong> <span class="dot a"></span> Amber. On a 600 m&sup2; lot the minimum lot size prevents a Torrens subdivision into 2 lots. The letter explains the constraint so the client can take planning advice before exchange.</li>
+    </ul>
+  </div>
+</div><p style="margin-top:2rem"><a class="btn" href="purchaser-profiles.html">Explore the purchaser lens packs</a></p></div></section>
 
-        <section id="how-it-works" class="how-it-works">
-            <h2>How It Works</h2>
-            <div class="steps-container">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <h3>Upload Contract</h3>
-                    <p>Simply upload your property contract PDF and let our AI scan and analyse every clause and condition.</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <h3>AI Analysis</h3>
-                    <p>AI then leverages our legal team's expertise to generate a white-labelled client-ready letter and risk traffic light report highlighting clauses that need your attention.</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <h3>Easy edits</h3>
-                    <p>Easily edit the generated letter using Microsoft Word.</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">4</div>
-                    <h3>Send the results</h3>
-                    <p>Send the results directly to your client, straight from the app.</p>
-                </div>
-            </div>
-        </section>
+<section class="section alt"><div class="wrap"><div class="head"><span class="eyebrow">Thoroughness</span><h2>Built to be more thorough, not just faster</h2><p class="lead">Speed is the by-product. The point of Convex is a review you would put your name to, on every contract, whoever is reviewing it and whatever time of day it is.</p></div><div class="grid g3"><div class="card"><div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/></svg></div><h3>Every document, not just the special conditions</h3><p>Title, planning certificate, plans and prescribed documents are all reviewed, because many issues never appear in the special conditions.</p></div><div class="card"><div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5"/><path d="M8.5 11l1.8 1.8L14 9.2"/></svg></div><h3>Inconsistencies surfaced</h3><p>Where one document in the contract does not line up with another, Convex brings it to your attention.</p></div><div class="card"><div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><h3>The same standard at 5pm on a Friday</h3><p>Every page is read, every time. Convex does not skim a 90-page contract because the day has run long.</p></div><div class="card"><div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="2" width="8" height="20" rx="4"/><circle cx="12" cy="7" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="12" cy="17" r="1.6"/></svg></div><h3>Nothing assumed</h3><p>Anything Convex cannot confirm is standard is flagged for your review, with the reason.</p></div><div class="card"><div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M7 21h10"/><path d="M5 7h14"/><path d="M5 7l-3 6a3 3 0 0 0 6 0zM19 7l-3 6a3 3 0 0 0 6 0z"/></svg></div><h3>Built from practice</h3><p>Designed by a practising property lawyer and refined on real contracts every week.</p></div><div class="card"><div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><circle cx="17" cy="9" r="2.5"/><path d="M16 14.5a5 5 0 0 1 5.5 5"/></svg></div><h3>Framed for the buyer</h3><p>The letter reads as advice for this client rather than a list of every possible risk.</p></div></div></div></section>
 
-        <section class="user-story">
-            <div class="story-content">
-                <div class="story-visual">
-                    <div class="story-image-wrapper">
-                        <img src="stressed_lawyer.webp" alt="Stressed Lawyer-Conveyancer" class="story-image">
-                    </div>
-                    <h2 class="story-heading">You've Been Here Before</h2>
-                </div>
-                <div class="story-narrative">
-                    <div class="story-card story-card-intro">
-                        <p class="story-intro">It's Friday afternoon, 4:30pm. You're wrapping up the week, looking forward to the weekend. Then the phone rings.</p>
-                    </div>
-                    
-                    <div class="story-card story-card-challenge">
-                        <p class="story-challenge">It's a client — a good one. They've found their dream property, but there's a catch: the contract needs to be reviewed before tomorrow's open home. The deadline is tight, the pressure is real. You're faced with a choice: stay late and sacrifice your personal time, or turn away a valued client.</p>
-                    </div>
-                    
-                    <div class="story-card story-card-struggle">
-                        <p class="story-struggle">This isn't the first time. You've lost count of how many Friday afternoons have turned into Friday nights. How many weekends have started with you still at your desk. How many times you've had to choose between your professional commitments and your personal life.</p>
-                    </div>
-                    
-                    <div class="story-card story-card-solution">
-                        <p class="story-solution">But what if you didn't have to choose? What if you could deliver that same high-quality review in minutes instead of hours? What if you could say "yes" to your client and still make it home for dinner?</p>
-                    </div>
-                    
-                    <div class="story-card story-card-transformation">
-                        <p class="story-transformation">With Convex, you can. Our platform combines state-of-the-art AI technology with deep legal expertise to turn contract reviews around in minutes—not hours. Upload the contract, review the AI-generated analysis and client letter, make your professional edits, and send it off. What used to take hours now takes minutes.</p>
-                    </div>
-                    
-                    <div class="story-card story-card-victory">
-                        <p class="story-victory">You're not just faster—you're better. You have more time to focus on what truly matters: advising your clients, building relationships, and growing your practice. You're no longer choosing between quality and speed, between your clients and your life. You're choosing both.</p>
-                    </div>
-                    
-                    <div class="story-image-card">
-                        <img src="Conveyancer_winning_with_Convex.webp" alt="Conveyancer winning with Convex" class="story-winning-image">
-                    </div>
-                    
-                    <div class="story-card story-card-call">
-                        <p class="story-call">That Friday afternoon call? Now it's an opportunity, not a burden. You're the hero of your own story, and Convex is your superpower.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+<section class="section "><div class="wrap"><div class="head"><span class="eyebrow">The economics</span><h2>Make contract reviews profitable again</h2><p class="lead">Pre-purchase contract reviews in NSW are commonly offered free, or for a small fixed fee - often around $100 for an established contract and $200 for off-the-plan. Done properly by hand, a review costs more in time than it earns. Convex turns it into work you can charge for, and profit from.</p></div><div class="split" style="align-items:start"><div><ul class="checks"><li><strong>The fee:</strong> the review is priced as a loss leader, so every hour spent on it is paid for by the conveyance that may follow.</li><li><strong>The time:</strong> a thorough manual review of a standard contract commonly takes 1 to 1.5 hours, and an off-the-plan contract 2 hours or more. At $400 an hour, that is $400 to $800 of time for a fee of $0 to $200.</li><li><strong>The lost lead:</strong> if the client is outbid or walks away, the time is never recovered.</li><li><strong>The risk:</strong> conveyancing and property work is the largest single source of professional negligence notifications to Lawcover. A rushed review is where things are missed.</li><li><strong>The opportunity:</strong> a thorough review on your letterhead, ready the same day, is a service worth charging for. At $250 a review and $400 an hour, a 1-hour manual review loses $150. With Convex, 12 minutes of checking makes $140.</li></ul><p style="margin-top:1.25rem">Change the figures in the calculator to match your practice.</p></div><div><div class="calc" data-calc>
+  <div class="calc-in">
+    <fieldset><legend>Contract type</legend><div class="seg">
+      <label><input type="radio" name="ctype" value="est" checked><span>Established</span></label>
+      <label><input type="radio" name="ctype" value="otp"><span>Off-the-plan</span></label></div></fieldset>
+    <label for="calc-rate">Your hourly rate ($)<input id="calc-rate" type="number" min="0" step="10" value="400" data-k="rate"></label>
+    <label for="calc-hours">Hours for a manual review<input id="calc-hours" type="number" min="0" step="0.25" value="1" data-k="hours"></label>
+    <label for="calc-fee">Fee you charge for the review ($)<input id="calc-fee" type="number" min="0" step="10" value="250" data-k="fee"></label>
+    <label for="calc-n">Reviews a month<input id="calc-n" type="number" min="1" step="1" value="10" data-k="n"></label>
+  </div>
+  <div class="calc-out" aria-live="polite">
+    <table><thead><tr><th></th><th>Manual</th><th>With Convex</th></tr></thead><tbody>
+      <tr><th scope="row">Your time per review</th><td data-o="t1"></td><td data-o="t2"></td></tr>
+      <tr><th scope="row">Cost of that time</th><td data-o="c1"></td><td data-o="c2"></td></tr>
+      <tr><th scope="row">Convex credit</th><td>-</td><td data-o="cr"></td></tr>
+      <tr><th scope="row">Fee received</th><td data-o="f1"></td><td data-o="f2"></td></tr>
+      <tr class="tot"><th scope="row">Margin per review</th><td data-o="m1"></td><td data-o="m2"></td></tr>
+      <tr class="tot"><th scope="row">Margin per month</th><td data-o="mm1"></td><td data-o="mm2"></td></tr>
+    </tbody></table>
+    <p class="calc-note"><b data-o="save"></b> better off and <b data-o="hrs"></b> hours back each month. Assumes checking a Convex review takes 20% of the manual time (the up to 80% saving) and a credit costs about $30.</p>
+  </div>
+</div></div></div></div></section>
 
-        <section id="pricing" class="pricing">
-            <h2>Simple, Transparent Pricing</h2>
-            <p class="pricing-intro">Subscription plans built for every practice size</p>
+<section class="section alt"><div class="wrap"><div class="head"><span class="eyebrow">What you receive</span><h2>A client-ready review, not a first draft</h2></div><div class="grid g4"><div class="card"><div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="2" width="8" height="20" rx="4"/><circle cx="12" cy="7" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="12" cy="17" r="1.6"/></svg></div><h3>Traffic light report</h3><p>Every finding scored green, amber or red with a short reason, so you read the reds first.</p></div><div class="card"><div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div><h3>Client-ready letter</h3><p>Your letterhead, matter number and client details already in place. Every issue explained in plain English, so minimal edits are needed.</p></div><div class="card"><div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h4"/></svg></div><h3>Word and PDF</h3><p>Download the letter in Word and PDF and save it to the matter in your practice management system.</p></div><div class="card"><div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l4-1 11-11-3-3L5 16z"/><path d="M14 6l3 3"/></svg></div><h3>Suggested amendments <span class="soon">Coming soon</span></h3><p>Suggested amendments in italics under each issue, plus a separate amendments list to download and send to the vendor's solicitor.</p></div></div></div></section>
 
-            <div class="billing-toggle" role="group" aria-label="Billing period">
-                <span class="billing-label billing-label-monthly active">Monthly</span>
-                <label class="billing-switch">
-                    <input type="checkbox" id="billing-toggle" aria-label="Switch to yearly billing">
-                    <span class="billing-slider"></span>
-                </label>
-                <span class="billing-label billing-label-yearly">Yearly</span>
-                <span class="billing-save-badge">Save 10%</span>
-            </div>
-            <p class="billing-save-note" id="billing-save-note" hidden>Pay yearly and save 10% compared to monthly billing.</p>
+<section class="section "><div class="wrap"><div class="head ctr"><span class="eyebrow">How it works</span><h2>From matter to client letter in 4 steps</h2></div><ol class="steps">
+  <li><h3>Enter the matter</h3><p>Add your matter number and client names. They populate the letterhead, so use the same number as your practice management system.</p></li>
+  <li><h3>Choose the lens</h3><p>Select the purchaser profile and whether your client intends to develop. Not sure yet? Convex applies a balanced default.</p></li>
+  <li><h3>Upload the contract</h3><p>Drop in the contract PDF. Scanned documents are read with OCR. The review is ready in 3 to 5 minutes.</p></li>
+  <li><h3>Review and send</h3><p>Check the report and letter, make sure you are happy with it, and send it to your client with minimal edits.</p></li>
+</ol>
+<p style="text-align:center;margin-top:2.5rem"><a class="btn btn-ghost" href="how-it-works.html">The full walkthrough</a></p></div></section>
 
-            <div class="pricing-grid">
-                <div class="pricing-card">
-                    <h3>Small</h3>
-                    <p class="pricing-tier-desc">For solo practitioners</p>
-                    <div class="price" data-monthly="145" data-yearly="1560">
-                        <span class="price-value">$<span class="price-amount">145</span></span><span class="price-period">/month</span>
-                    </div>
-                    <div class="pricing-reviews">
-                        <span class="pricing-reviews-count">5</span>
-                        <span class="pricing-reviews-label">contract reviews per month</span>
-                    </div>
-                    <ul class="pricing-features">
-                        <li>Client-ready output letters</li>
-                        <li>Risk traffic light reports</li>
-                        <li>Email and phone support</li>
-                        <li>OCR for scanned PDFs</li>
-                    </ul>
-                    <a href="https://app.convex.au/auth/register" class="primary-button">Get Started</a>
-                </div>
+<section class="section alt" id="demo"><div class="wrap"><div class="head ctr"><span class="eyebrow">Demo</span><h2>See Convex in action</h2><p class="lead">A short walkthrough of the platform.</p></div><div class="narrow" style="margin:0 auto"><div class="video"><iframe src="https://www.youtube-nocookie.com/embed/FOdhpSK5-Bo" title="Convex demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></div></div></div></section>
 
-                <div class="pricing-card pricing-card-featured">
-                    <div class="pricing-card-accent" aria-hidden="true">
-                        <div class="pricing-shine"></div>
-                    </div>
-                    <div class="pricing-ribbon">Most Popular</div>
-                    <h3>Medium</h3>
-                    <p class="pricing-tier-desc">For growing practices</p>
-                    <div class="price" data-monthly="595" data-yearly="6370">
-                        <span class="price-value">$<span class="price-amount">590</span></span><span class="price-period">/month</span>
-                    </div>
-                    <div class="pricing-reviews">
-                        <span class="pricing-reviews-count">20</span>
-                        <span class="pricing-reviews-label">contract reviews per month</span>
-                    </div>
-                    <ul class="pricing-features">
-                        <li>Everything in Small</li>
-                        <li>Bulk contract uploads</li>
-                        <li>Custom letterhead branding</li>
-                        <li>Priority support</li>
-                    </ul>
-                    <a href="https://app.convex.au/auth/register" class="primary-button">Get Started</a>
-                </div>
+<section class="section "><div class="wrap"><div class="head ctr"><span class="eyebrow">Pricing</span><h2>Plans built around your monthly volume</h2><p class="lead">Every plan includes every contract type and every purchaser lens. Need more in a busy month? Top up at the same rate per review.</p></div><div class="grid g3" style="max-width:960px;margin:0 auto">
+  <div class="card" style="text-align:center"><h3>Small</h3><p>About 1 review a week</p><p class="price">$145<span class="per">/month</span></p><p><strong>5</strong> reviews a month</p></div>
+  <div class="card" style="text-align:center;border:2px solid var(--emerald)"><h3>Medium</h3><p>About 1 review every business day</p><p class="price">$595<span class="per">/month</span></p><p><strong>20</strong> reviews a month</p></div>
+  <div class="card" style="text-align:center"><h3>Large</h3><p>2 to 3 reviews every business day</p><p class="price">$1,495<span class="per">/month</span></p><p><strong>50</strong> reviews a month</p></div>
+</div>
+<p style="text-align:center;margin-top:2rem"><a class="btn btn-ghost" href="pricing.html">Plans, credits and top-ups explained</a></p></div></section>
 
-                <div class="pricing-card">
-                    <h3>Large</h3>
-                    <p class="pricing-tier-desc">For high-volume firms</p>
-                    <div class="price" data-monthly="1495" data-yearly="14995">
-                        <span class="price-value">$<span class="price-amount">1,395</span></span><span class="price-period">/month</span>
-                    </div>
-                    <div class="pricing-reviews">
-                        <span class="pricing-reviews-count">50</span>
-                        <span class="pricing-reviews-label">contract reviews per month</span>
-                    </div>
-                    <ul class="pricing-features">
-                        <li>Everything in Medium</li>
-                        <li>Team-ready workflow</li>
-                        <li>Dedicated account support</li>
-                    </ul>
-                    <a href="https://app.convex.au/auth/register" class="primary-button">Get Started</a>
-                </div>
-            </div>
-        </section>
+<section class="section alt"><div class="wrap"><div class="head"><span class="eyebrow">On the roadmap</span><h2>What is coming next</h2></div><div class="grid g4"><div class="card"><div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v5M15 2v5"/><path d="M6 7h12v4a6 6 0 0 1-12 0z"/><path d="M12 17v5"/></svg></div><h3>Smokeball and Clio <span class="soon">Coming soon</span></h3><p>Matter number and client details pulled from the matter, and the finished letter saved straight back to it.</p></div><div class="card"><div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l4-1 11-11-3-3L5 16z"/><path d="M14 6l3 3"/></svg></div><h3>Suggested amendments <span class="soon">Coming soon</span></h3><p>Italic amendment suggestions in the letter and a downloadable amendments list.</p></div><div class="card"><div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4L3 6v14l6-2 6 2 6-2V4l-6 2z"/><path d="M9 4v14M15 6v14"/></svg></div><h3>Victoria <span class="soon">Coming soon</span></h3><p>Contracts of sale and section 32 vendor statements.</p></div><div class="card"><div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4L3 6v14l6-2 6 2 6-2V4l-6 2z"/><path d="M9 4v14M15 6v14"/></svg></div><h3>Queensland <span class="soon">Coming soon</span></h3><p>Contracts and the seller disclosure regime.</p></div></div></div></section>
 
-        <section id="FAQ" class="faq">
-            <h2>Frequently Asked Questions</h2>
-            <div class="faq-grid">
-                <!-- General Use & Value -->
-                <div class="faq-category">
-                    <h3>General Use & Value</h3>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">What is Convex and how does it work?</div>
-                    <div class="faq-answer">
-                        Convex is a legal-tech platform built specifically for NSW residential contract reviews. It combines AI, custom coding, and smart logic developed jointly between software engineers and an experienced property lawyer.<br><br>
-                        Simply upload a contract and Convex instantly generates:<br>
-                        • a traffic light report (green/amber/red) highlighting issues that require attention<br>
-                        • a client-ready output letter you can edit or send<br>
-                        • structured summaries that help you review faster and more consistently<br><br>
-                        Convex doesn't replace your professional judgment — it fast-tracks the review process so you can focus on negotiations, advice, and exchange.
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">Why should I use AI for contract reviews instead of reviewing the contract manually?</div>
-                    <div class="faq-answer">
-                        Manual contract reviews are extremely time-consuming, especially with the low fixed fees charged in conveyancing. Clients also expect faster turnaround times than ever before.<br><br>
-                        Convex helps you stay competitive by:<br>
-                        • cutting review time dramatically<br>
-                        • improving consistency and accuracy<br>
-                        • helping you deliver reviews faster than competing firms<br>
-                        • freeing you from repetitive scanning so you can focus on negotiations and client advice<br><br>
-                        With the rapid rise of legal tech, firms that don't adopt efficient tools risk falling behind.
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">How much time can Convex save me on a typical contract review?</div>
-                    <div class="faq-answer">
-                        Most conveyancers report a 30–50% reduction in review time. A review that normally takes 45–60 minutes might take 15–30 minutes with Convex. You can handle more clients per week without sacrificing quality - particularly during Friday rushes.
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">Can Convex help me increase revenue?</div>
-                    <div class="faq-answer">
-                        Yes. Contract reviews are often the most time-intensive stage of a conveyance. Convex helps you:<br>
-                        • move through contract reviews faster<br>
-                        • focus on negotiations and exchange<br>
-                        • lock in deals sooner for your clients<br>
-                        • take on more clients without increasing hours<br>
-                        • deliver service levels that encourage referrals<br><br>
-                        This directly increases your capacity and improves profitability.
-                    </div>
-                </div>
+<section class="section "><div class="wrap"><div class="head ctr"><span class="eyebrow">FAQs</span><h2>Common questions</h2></div><div class="narrow" style="margin:0 auto"><div class="faq"><details><summary>What is Convex?</summary><div class="a">Convex is an AI contract review platform for NSW conveyancers and property lawyers. Enter the matter details, choose the purchaser lens and upload the contract. Convex returns a green, amber and red traffic light report and a client-ready letter in Word and PDF.</div></details><details><summary>Which NSW contracts can Convex review?</summary><div class="a">Established residential, existing strata, off-the-plan strata, unregistered land, the land contract in a house and land package, and commercial contracts of sale. The building contract in a house and land package is not reviewed.</div></details><details><summary>What is a purchaser lens?</summary><div class="a">A lens tells Convex who the buyer is and what they intend to do with the property: owner-occupier (upgrader, downsizer or first home buyer), investor (own name, trust or SMSF), and whether they intend to develop. If you do not know yet, choose "Not sure yet" and Convex applies a balanced default. Every clause is still reviewed. The lens decides what is prioritised and how the letter is framed.</div></details><details><summary>Who built Convex?</summary><div class="a">Zohra Ali, a NSW property lawyer admitted in 2015 and Principal of Corporate Legal, designed Convex with a team of software engineers. Corporate Legal uses Convex on its own contract reviews.</div></details><details><summary>How long does a review take?</summary><div class="a">Usually 3 to 5 minutes from upload, including long contracts and scanned PDFs.</div></details><details><summary>Can I try it first?</summary><div class="a">Yes. New subscribers receive a 7-day trial with 5 review credits.</div></details></div><p style="text-align:center;margin-top:2rem"><a class="btn btn-ghost" href="faq.html">All FAQs</a></p></div></div></section>
 
-                <!-- Accuracy & Reliability -->
-                <div class="faq-category">
-                    <h3>Accuracy & Reliability</h3>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">Is Convex accurate enough for legal work?</div>
-                    <div class="faq-answer">
-                        Yes. Convex is highly accurate and continues to improve as we refine and enhance the system. It has been tested on thousands of NSW residential contracts and has an excellent success rate in identifying common and unusual risks.<br><br>
-                        You still maintain full professional oversight - Convex is a tool designed to accelerate your review, not replace your legal judgment.
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">Does Convex replace the need for lawyer or conveyancer review?</div>
-                    <div class="faq-answer">
-                        No. Convex supports your review; it does not replace it. It reads the contract, flags issues, and drafts your client letter - but you perform the legal analysis, provide advice, and make decisions.
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">Why should I trust Convex?</div>
-                    <div class="faq-answer">
-                        Convex is not a generic AI tool. It is a purpose-built review engine that combines:<br>
-                        • AI<br>
-                        • legal-specific coding<br>
-                        • custom logic based on 10+ years of property law experience<br>
-                        • thousands of real-world contract tests<br>
-                        • ongoing iteration and quality control<br><br>
-                        It is built by a property lawyer, conveyancers, and software engineers working closely together to ensure accuracy and reliability.
-                    </div>
-                </div>
-
-                <!-- Ease of Adoption -->
-                <div class="faq-category">
-                    <h3>Ease of Adoption</h3>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">I've never used AI before - is Convex easy to learn?</div>
-                    <div class="faq-answer">
-                        Yes. Convex is designed for conveyancers with no tech experience. Upload the PDF, and the platform automatically processes it. No complex setup. No training required.
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">Do I need to change how I currently review contracts?</div>
-                    <div class="faq-answer">
-                        No. You can keep your existing review style. Convex simply streamlines your workflow by:<br>
-                        • flagging risks<br>
-                        • producing a draft client letter<br>
-                        • letting you edit or add your usual advice<br>
-                        • allowing you to upload your own letterhead for consistent branding<br><br>
-                        It accelerates your review — not your professional style.
-                    </div>
-                </div>
-
-                <!-- Compliance & Confidentiality -->
-                <div class="faq-category">
-                    <h3>Compliance & Confidentiality</h3>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">How does Convex handle client confidentiality?</div>
-                    <div class="faq-answer">
-                        Convex uses Amazon Web Services (AWS) to securely process and store data. All information is encrypted, protected, and handled in accordance with best-practice data security standards.
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">Can I use Convex outside NSW?</div>
-                    <div class="faq-answer">
-                        Not yet. Convex currently reviews NSW residential property contracts, with expansion into other contract types and other Australian states planned.
-                    </div>
-                </div>
-
-                <!-- Integration & Workflow -->
-                <div class="faq-category">
-                    <h3>Integration & Workflow</h3>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">Does Convex integrate with my conveyancing software?</div>
-                    <div class="faq-answer">
-                        At this stage, Convex is a standalone tool. We do anticipate offering integrations in the future. Active users will be notified as soon as integrations become available.
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">What file types does Convex accept?</div>
-                    <div class="faq-answer">
-                        Convex currently accepts PDF files, including scanned PDFs using built-in OCR capabilities. Word document support is coming soon.
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">Can I customise the client-ready output letter?</div>
-                    <div class="faq-answer">
-                        Yes. The letter is fully editable - you can adjust the tone, content, branding, and upload your own letterhead.
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">How long does a review take?</div>
-                    <div class="faq-answer">
-                        Convex usually completes the review within 3-5 minutes, even for long contracts.
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">Can I upload multiple contracts at once?</div>
-                    <div class="faq-answer">
-                        Yes. Convex supports bulk uploads, perfect for:<br>
-                        • Friday contract rushes<br>
-                        • referral partners sending multiple opportunities<br>
-                        • buyer's agents who submit multiple properties for a client<br>
-                        • high-volume practices
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">Does Convex support scanned PDFs (OCR)?</div>
-                    <div class="faq-answer">
-                        Yes. Convex includes OCR technology to read scanned PDFs clearly and accurately.
-                    </div>
-                </div>
-
-                <!-- Business Impact -->
-                <div class="faq-category">
-                    <h3>Business Impact</h3>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">Will Convex make my work redundant?</div>
-                    <div class="faq-answer">
-                        No - it enhances your work. You remain essential for legal advice, negotiations, and exchange.
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">How does Convex help me stand out from competitors?</div>
-                    <div class="faq-answer">
-                        Convex helps your practice stay ahead in a market that is changing rapidly. Legal technology and AI are growing at an exponential pace, and firms that fail to innovate risk being overtaken by competitors who embrace these tools.<br><br>
-                        By using Convex, you instantly position your practice as modern, efficient, and future-ready. You benefit from:<br>
-                        • Faster turnaround times<br>
-                        • Consistent, professional client letters<br>
-                        • AI-assisted accuracy<br>
-                        • A smoother client experience<br>
-                        • The ability to deliver advice more quickly than traditional practices<br><br>
-                        This is simply the direction the industry is heading - if you don't adopt tools like Convex, others will, and they'll be able to surpass you in both speed and service quality.
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">Is Convex cost-effective for small practices?</div>
-                    <div class="faq-answer">
-                        Yes. Convex is ideal for solo practitioners and small-to-medium practices, especially those without the budget for additional staff. If you are operating at (or close to) capacity, Convex lets you save hours each week by accelerating the most time-consuming part of conveyancing – the contract review. This means you can:<br>
-                        • handle more clients without hiring<br>
-                        • reduce the pressure on your existing team<br>
-                        • avoid burnout and bottlenecks<br>
-                        • grow sustainably without adding payroll costs
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">Can I try Convex before committing?</div>
-                    <div class="faq-answer">
-                        Yes. When you sign up, you receive 3 free credits so you can test Convex on real or sample contracts. This lets you see the time savings, workflow improvements, and quality of the client-ready output before making a decision.
-                    </div>
-                </div>
-
-                <!-- Additional Information -->
-                <div class="faq-category">
-                    <h3>Additional Information</h3>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">What is the traffic light report?</div>
-                    <div class="faq-answer">
-                        The traffic light report is a structured, colour-coded summary that highlights key risks in the contract:<br>
-                        • Green - standard / low-risk clauses<br>
-                        • Amber - items that may require attention or clarification<br>
-                        • Red - unusual terms or clauses that require prompt review<br><br>
-                        It helps you prioritise your reading and jump straight to the sections that matter most.
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">Is the traffic light report customisable?</div>
-                    <div class="faq-answer">
-                        Not yet. Convex applies a traffic light score based on our legal experience and testing of thousands of NSW contracts. In future updates, users will be able to customise their own thresholds.
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">What if the client letter doesn't include the level of detail I like to include?</div>
-                    <div class="faq-answer">
-                        The client letter is fully editable. You can add your own commentary, additional warnings, or firm-specific inclusions. You can also save your preferred additions in your letterhead template, so you don't need to rewrite them each time.
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">Can Convex review business or commercial contracts?</div>
-                    <div class="faq-answer">
-                        No. Convex currently reviews NSW residential established dwellings only.
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">What types of contracts can Convex review?</div>
-                    <div class="faq-answer">
-                        Convex reviews residential dwelling contracts for:<br>
-                        • houses<br>
-                        • units<br>
-                        • townhouses<br>
-                        • duplexes<br>
-                        • strata lots<br><br>
-                        Convex does not review:<br>
-                        • off-the-plan<br>
-                        • commercial property<br>
-                        • house & land packages<br>
-                        • business contracts
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">How does Convex decide whether a special condition is Green, Amber, or Red?</div>
-                    <div class="faq-answer">
-                        Convex uses an internal legal-logic classification system built from thousands of NSW residential property contracts, combined with AI and custom coding. Each special condition is assessed against a set of rules developed by an experienced property lawyer and refined through extensive testing.<br><br>
-                        Here's how the classification works:<br>
-                        🟢 Green – Standard or Low-Risk Conditions: These are clauses commonly seen in NSW residential contracts and usually pose no unusual risk to the buyer.<br><br>
-                        🟡 Amber - Conditions Requiring Attention or Clarification: These clauses aren't necessarily problematic but differ slightly from standard practice, require explanation to the client, or may need negotiation depending on circumstances. Amber conditions prompt you to double-check before advising your client.<br><br>
-                        🔴 Red - Unusual or High-Risk Conditions: These are flagged when a clause imposes obligations that may disadvantage the buyer, creates additional risk or liability, or requires legal clarification or negotiation. Red conditions are designed to immediately draw your attention to parts of the contract that typically warrant lawyer review or amendment.<br><br>
-                        How the system works behind the scenes: Convex analyses each clause using legal-pattern recognition, risk-weighting algorithms, classification rules built from real NSW conveyancing experience, and ongoing user feedback and iterative improvements. The traffic light rating is not random - it is based on a deep library of contract conditions and how they behave in real-world conveyancing matters. As we continue improving Convex, the classification system becomes even more accurate over time.
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="contact">
-            <h2>Want to Learn More Before You Transform Your Contract Review Process?</h2>
-            <form class="contact-form" action="https://formspree.io/f/xovnrlaj" method="POST">
-                <input type="text" name="name" placeholder="Full Name" required>
-                <input type="email" name="email" placeholder="Email Address" required>
-                <input type="tel" name="phone" placeholder="Phone Number">
-                <select name="business" required>
-                    <option value="">What's Your Business?</option>
-                    <option value="conveyancer">Conveyancer</option>
-                    <option value="property-lawyer">Property Lawyer</option>
-                    <option value="buyers-agent">Buyers Agent</option>
-                    <option value="real-estate-agent">Real Estate Agent</option>
-                </select>
-                <button type="submit" class="primary-button">Contact Us</button>
-            </form>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <img src="convex_logo.png" alt="Convex" class="footer-logo">
-                <p>Review Smarter. Close Faster.</p>
-            </div>
-            <div class="footer-section">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#how-it-works">How It Works</a></li>
-                    <li><a href="#pricing">Pricing</a></li>
-                    <li><a href="#FAQ">FAQs</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Contact</h4>
-                <ul>
-                    <li>Email: <a href="mailto:info@convex.au">info@convex.au</a></li>
-                    <li>Phone: <a href="tel:+61406522627">0406522627</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Convex. All rights reserved. | <a href="terms-and-conditions.html">Terms and Conditions</a></p>
-        </div>
-    </footer>
-    <script>
-      // Billing period toggle
-      const billingToggle = document.getElementById('billing-toggle');
-      const billingSaveNote = document.getElementById('billing-save-note');
-      const billingLabelMonthly = document.querySelector('.billing-label-monthly');
-      const billingLabelYearly = document.querySelector('.billing-label-yearly');
-
-      function formatPrice(value) {
-        return Number(value).toLocaleString('en-AU');
-      }
-
-      function updatePricing(isYearly) {
-        document.querySelectorAll('.pricing-card .price').forEach(function(priceEl) {
-          const amountEl = priceEl.querySelector('.price-amount');
-          const periodEl = priceEl.querySelector('.price-period');
-          const monthly = priceEl.dataset.monthly;
-          const yearly = priceEl.dataset.yearly;
-
-          if (isYearly) {
-            amountEl.textContent = formatPrice(yearly);
-            periodEl.textContent = '/year';
-          } else {
-            amountEl.textContent = formatPrice(monthly);
-            periodEl.textContent = '/month';
-          }
-        });
-
-        if (billingLabelMonthly) {
-          billingLabelMonthly.classList.toggle('active', !isYearly);
-        }
-        if (billingLabelYearly) {
-          billingLabelYearly.classList.toggle('active', isYearly);
-        }
-        if (billingSaveNote) {
-          billingSaveNote.hidden = !isYearly;
-        }
-      }
-
-      if (billingToggle) {
-        billingToggle.addEventListener('change', function() {
-          updatePricing(billingToggle.checked);
-        });
-      }
-
-      // Mobile menu toggle
-      const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
-      const navLinks = document.querySelector('.nav-links');
-      
-      if (mobileMenuToggle && navLinks) {
-        mobileMenuToggle.addEventListener('click', function() {
-          this.classList.toggle('active');
-          navLinks.classList.toggle('active');
-        });
-        
-        // Close menu when clicking on a link
-        navLinks.querySelectorAll('a').forEach(link => {
-          link.addEventListener('click', function() {
-            mobileMenuToggle.classList.remove('active');
-            navLinks.classList.remove('active');
-          });
-        });
-        
-        // Close menu when clicking outside
-        document.addEventListener('click', function(event) {
-          const isClickInsideNav = navLinks.contains(event.target);
-          const isClickOnToggle = mobileMenuToggle.contains(event.target);
-          
-          if (!isClickInsideNav && !isClickOnToggle && navLinks.classList.contains('active')) {
-            mobileMenuToggle.classList.remove('active');
-            navLinks.classList.remove('active');
-          }
-        });
-      }
-      
-      // FAQ accordion
-      document.querySelectorAll('.faq-question').forEach(q => {
-        q.addEventListener('click', function() {
-          const answer = this.nextElementSibling;
-          if (!answer) return;
-          if (answer.style.maxHeight && answer.style.maxHeight !== '0px') {
-            answer.style.maxHeight = '0px';
-            answer.classList.remove('open');
-          } else {
-            // Calculate the actual height needed by temporarily removing max-height
-            const currentMaxHeight = answer.style.maxHeight;
-            answer.style.maxHeight = 'none';
-            const height = answer.scrollHeight;
-            answer.style.maxHeight = currentMaxHeight;
-            // Set max-height to the calculated height plus some buffer
-            answer.style.maxHeight = (height + 50) + 'px';
-            answer.classList.add('open');
-          }
-          this.classList.toggle('open');
-        });
-      });
-
-      // Handle contact form submission
-      document.querySelector('.contact-form').addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        const form = this;
-        const submitButton = form.querySelector('button[type="submit"]');
-        const originalText = submitButton.textContent;
-        
-        // Show loading state
-        submitButton.textContent = 'Sending...';
-        submitButton.disabled = true;
-        
-        // Submit the form
-        fetch(form.action, {
-          method: 'POST',
-          body: new FormData(form),
-          headers: {
-            'Accept': 'application/json'
-          }
-        })
-        .then(response => {
-          if (response.ok) {
-            submitButton.textContent = 'Message Sent!';
-            submitButton.style.backgroundColor = 'var(--success-color)';
-            form.reset();
-            
-            // Reset button after 3 seconds
-            setTimeout(() => {
-              submitButton.textContent = originalText;
-              submitButton.style.backgroundColor = '';
-              submitButton.disabled = false;
-            }, 3000);
-          } else {
-            throw new Error('Form submission failed');
-          }
-        })
-        .catch(error => {
-          submitButton.textContent = 'Error - Try Again';
-          submitButton.style.backgroundColor = '#e74c3c';
-          
-          // Reset button after 3 seconds
-          setTimeout(() => {
-            submitButton.textContent = originalText;
-            submitButton.style.backgroundColor = '';
-            submitButton.disabled = false;
-          }, 3000);
-        });
-      });
-    </script>
+<section class="cta-band"><div class="wrap cta-inner"><div><h2>Run your next NSW contract review through Convex</h2><p>7-day trial with 5 review credits. Cancel any time before the trial ends.</p></div><div class="btn-row"><a class="btn" href="https://app.convex.au/auth/register">Start your trial</a><a class="btn btn-ghost" href="contact.html">Book a demo</a></div></div></section>
+</main>
+<footer class="footer"><div class="wrap">
+<div class="footer-grid">
+  <div><img src="convex_logo.png" alt="Convex" width="520" height="380"><p>Review Smarter. Close Faster.</p>
+  <p style="margin-top:.8rem">AI contract review for NSW conveyancers and property lawyers.</p></div>
+  <div><h4>Product</h4><ul><li><a href="how-it-works.html">How it works</a></li><li><a href="purchaser-profiles.html">Purchaser lenses</a></li>
+  <li><a href="why-convex.html">Why Convex</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="faq.html">FAQs</a></li></ul></div>
+  <div><h4>Contracts</h4><ul><li><a href="nsw-residential-contract-review.html">Residential</a></li><li><a href="strata-contract-review.html">Strata</a></li>
+  <li><a href="off-the-plan-contract-review.html">Off-the-plan</a></li><li><a href="unregistered-land-contract-review.html">Unregistered land</a></li>
+  <li><a href="house-and-land-contract-review.html">House and land</a></li><li><a href="commercial-contract-review.html">Commercial</a></li></ul></div>
+  <div><h4>Contact</h4><ul><li><a href="contact.html">Book a demo</a></li><li><a href="mailto:info@convex.au">info@convex.au</a></li>
+  <li><a href="tel:+61406522627">0406 522 627</a></li><li><a href="https://app.convex.au/auth/login">Sign in</a></li></ul></div>
+</div>
+<div class="footer-bottom"><p>&copy; 2026 Convex Legal Pty Ltd ABN 87 692 237 577. Convex is a support tool for legal professionals and does not provide legal advice.</p>
+<p><a href="terms-and-conditions.html">Terms and conditions</a></p></div>
+</div></footer>
+<script src="main.js"></script>
 </body>
-</html> 
+</html>

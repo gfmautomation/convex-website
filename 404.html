@@ -1,151 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-AU">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 - Page Not Found | Convex</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        .error-page {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 2rem;
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            color: white;
-            text-align: center;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page not found | Convex</title>
+<meta name="description" content="This page could not be found.">
+<link rel="canonical" href="https://www.convex.au/404.html"><meta name="robots" content="noindex">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Convex">
+<meta property="og:title" content="Page not found | Convex"><meta property="og:description" content="This page could not be found.">
+<meta property="og:url" content="https://www.convex.au/404.html"><meta property="og:image" content="https://www.convex.au/convex_logo.png">
+<meta name="twitter:card" content="summary">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 
-        .error-content {
-            max-width: 600px;
-            width: 100%;
-        }
-
-        .error-logo {
-            height: 120px;
-            width: auto;
-            margin-bottom: 2rem;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .error-code {
-            font-size: 8rem;
-            font-weight: 800;
-            line-height: 1;
-            margin-bottom: 1rem;
-            background: linear-gradient(135deg, var(--accent-color), white);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .error-title {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            color: white;
-        }
-
-        .error-message {
-            font-size: 1.25rem;
-            margin-bottom: 2.5rem;
-            opacity: 0.9;
-            line-height: 1.6;
-        }
-
-        .error-actions {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .error-button {
-            display: inline-block;
-            padding: 0.8rem 2rem;
-            border-radius: 0.5rem;
-            text-decoration: none;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            font-size: 1.1rem;
-        }
-
-        .error-button-primary {
-            background-color: var(--accent-color);
-            color: var(--primary-color);
-            border: 2px solid var(--accent-color);
-        }
-
-        .error-button-primary:hover {
-            background-color: white;
-            color: var(--primary-color);
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-        }
-
-        .error-button-secondary {
-            background-color: transparent;
-            color: white;
-            border: 2px solid white;
-        }
-
-        .error-button-secondary:hover {
-            background-color: white;
-            color: var(--primary-color);
-            transform: translateY(-2px);
-        }
-
-        @media (max-width: 768px) {
-            .error-code {
-                font-size: 5rem;
-            }
-
-            .error-title {
-                font-size: 2rem;
-            }
-
-            .error-message {
-                font-size: 1.1rem;
-            }
-
-            .error-logo {
-                height: 100px;
-            }
-
-            .error-actions {
-                flex-direction: column;
-            }
-
-            .error-button {
-                width: 100%;
-                max-width: 300px;
-            }
-        }
-    </style>
 </head>
 <body>
-    <div class="error-page">
-        <div class="error-content">
-            <img src="convex_logo.png" alt="Convex" class="error-logo">
-            <div class="error-code">404</div>
-            <h1 class="error-title">Page Not Found</h1>
-            <p class="error-message">
-                Oops! The page you're looking for seems to have vanished. 
-                Don't worry though—we can help you get back on track.
-            </p>
-            <div class="error-actions">
-                <a href="https://www.convex.au" class="error-button error-button-primary">Go to Homepage</a>
-                <a href="https://app.convex.au/auth/register" class="error-button error-button-secondary">Get Started</a>
-            </div>
-        </div>
-    </div>
+<header class="header"><div class="wrap nav">
+<a class="logo" href="index.html" aria-label="Convex home"><img src="convex_logo.png" alt="Convex" width="520" height="380"></a>
+<button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+<ul class="nav-links" id="nav-links"><li><a href="how-it-works.html" data-nav="how">How it works</a></li><li><a href="contracts-we-review.html" data-nav="contracts">Contracts</a></li><li><a href="purchaser-profiles.html" data-nav="lens">Purchaser lenses</a></li><li><a href="why-convex.html" data-nav="why">Why Convex</a></li><li><a href="pricing.html" data-nav="pricing">Pricing</a></li><li><a href="faq.html" data-nav="faq">FAQs</a></li>
+<li><a class="btn btn-sm btn-ghost-light" href="https://app.convex.au/auth/login">Sign in</a></li>
+<li><a class="btn btn-sm" href="https://app.convex.au/auth/register">Start trial</a></li></ul>
+</div></header>
+<main id="main"><section class="section nf"><div class="wrap"><div class="code">404</div><h1 style="margin:1rem 0">Page not found</h1>
+<p class="lead" style="margin:0 auto 2rem">The page you were looking for has moved or does not exist.</p>
+<div class="btn-row" style="justify-content:center"><a class="btn" href="index.html">Go to the home page</a><a class="btn btn-ghost" href="faq.html">Read the FAQs</a></div></div></section></main>
+<footer class="footer"><div class="wrap">
+<div class="footer-grid">
+  <div><img src="convex_logo.png" alt="Convex" width="520" height="380"><p>Review Smarter. Close Faster.</p>
+  <p style="margin-top:.8rem">AI contract review for NSW conveyancers and property lawyers.</p></div>
+  <div><h4>Product</h4><ul><li><a href="how-it-works.html">How it works</a></li><li><a href="purchaser-profiles.html">Purchaser lenses</a></li>
+  <li><a href="why-convex.html">Why Convex</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="faq.html">FAQs</a></li></ul></div>
+  <div><h4>Contracts</h4><ul><li><a href="nsw-residential-contract-review.html">Residential</a></li><li><a href="strata-contract-review.html">Strata</a></li>
+  <li><a href="off-the-plan-contract-review.html">Off-the-plan</a></li><li><a href="unregistered-land-contract-review.html">Unregistered land</a></li>
+  <li><a href="house-and-land-contract-review.html">House and land</a></li><li><a href="commercial-contract-review.html">Commercial</a></li></ul></div>
+  <div><h4>Contact</h4><ul><li><a href="contact.html">Book a demo</a></li><li><a href="mailto:info@convex.au">info@convex.au</a></li>
+  <li><a href="tel:+61406522627">0406 522 627</a></li><li><a href="https://app.convex.au/auth/login">Sign in</a></li></ul></div>
+</div>
+<div class="footer-bottom"><p>&copy; 2026 Convex Legal Pty Ltd ABN 87 692 237 577. Convex is a support tool for legal professionals and does not provide legal advice.</p>
+<p><a href="terms-and-conditions.html">Terms and conditions</a></p></div>
+</div></footer>
+<script src="main.js"></script>
 </body>
 </html>
-
