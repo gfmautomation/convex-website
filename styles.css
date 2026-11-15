@@ -288,6 +288,8 @@ a.card .more { margin-top: auto; padding-top: 1rem; font-weight: 600; font-size:
     content: ""; position: absolute; left: 0; top: .3rem; width: 1.2rem; height: 1.2rem; border-radius: 50%;
     background: var(--emerald) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23012B27' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E") center/70% no-repeat;
 }
+.points li { padding-left: 2.55rem; }
+.points li::before { width: 1.68rem; height: 1.68rem; top: 0; }
 .ink .checks li::before { background-color: var(--lime); }
 
 /* ---------- Lens packs ---------- */
