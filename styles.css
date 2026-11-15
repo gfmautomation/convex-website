@@ -221,6 +221,20 @@ a.card:hover { border-color: var(--emerald); transform: translateY(-2px); }
 a.card .more { margin-top: auto; padding-top: 1rem; font-weight: 600; font-size: .9rem; color: var(--emerald-dark); }
 .ink .card { background: var(--ink-2); border-color: rgba(255,255,255,.08); }
 .ink .card p, .ink .card li { color: var(--on-ink-muted); }
+.lens-ex { display: grid; gap: 1.25rem; }
+.lens-ex .tag { background: transparent; border-color: rgba(214,232,16,.45); color: var(--lime); }
+.lens-ex h3 { font-size: 1.08rem; font-weight: 500; line-height: 1.4; margin-top: .55rem; }
+.tree { background: var(--ink-2); border: 1px solid rgba(255,255,255,.08); border-radius: var(--radius); padding: 1.35rem 1.5rem 1.45rem; }
+.tree-root::after { content: ""; display: block; width: 2px; height: .85rem; margin: .9rem 0 0 1.2rem; background: rgba(214,232,16,.55); }
+.tree-branches { list-style: none; margin: 0 0 0 1.2rem; }
+.tree-branches li { display: grid; grid-template-columns: max-content 1fr; gap: .85rem; align-items: center; position: relative; margin: 0; padding: .4rem 0 .4rem 1.35rem; border-left: 2px solid rgba(214,232,16,.55); }
+.tree-branches li::before { content: ""; position: absolute; left: 0; top: 50%; width: 1.35rem; height: 2px; background: rgba(214,232,16,.55); }
+.tree-branches li:last-child { border-left-color: transparent; }
+.tree-branches li:last-child::after { content: ""; position: absolute; left: -2px; top: 0; width: 2px; height: 50%; background: rgba(214,232,16,.55); }
+.tree-who { position: relative; z-index: 1; justify-self: start; margin-left: -.45rem; background: var(--ink-2); color: var(--lime); border: 1px solid rgba(214,232,16,.5); border-radius: 999px; font-size: .8rem; font-weight: 600; line-height: 1.2; padding: .28rem .7rem; white-space: nowrap; }
+.tree-branches p { margin: 0; display: flex; align-items: flex-start; gap: .55rem; font-size: .95rem; color: var(--on-ink-muted); background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.1); border-radius: 10px; padding: .7rem .85rem; }
+.tree-branches .dot { margin-top: .35rem; }
+.lens-more { margin-top: 2rem; }
 
 .soon { display: inline-block; font-size: .72rem; font-weight: 600; padding: .15rem .55rem; border-radius: 999px; background: #FFF4CC; color: #6B5200; vertical-align: middle; margin-left: .35rem; white-space: nowrap; }
 .ink .soon { background: rgba(214,232,16,.16); color: var(--lime); }
@@ -257,7 +271,14 @@ a.card .more { margin-top: auto; padding-top: 1rem; font-weight: 600; font-size:
 .split.rev > :first-child { order: 2; }
 .shot img { border-radius: var(--radius); box-shadow: var(--shadow); }
 .checks { list-style: none; margin-top: 1.25rem; display: grid; gap: .7rem; }
+.checks .ask { color: var(--emerald-dark); }
 .checks li { padding-left: 2rem; position: relative; }
+.points { gap: 1.15rem; }
+.points li { display: grid; gap: .15rem; }
+.points .ask, .points .reply { display: block; }
+.point-highlight { margin-top: 1.5rem; text-align: center; background: var(--mist); border: 1px solid var(--emerald); border-radius: var(--radius); padding: 1.15rem 1.3rem; }
+.point-highlight strong { display: block; color: var(--emerald-dark); }
+.point-highlight p { margin: .4rem auto 0; max-width: 42ch; }
 .checks li::before {
     content: ""; position: absolute; left: 0; top: .3rem; width: 1.2rem; height: 1.2rem; border-radius: 50%;
     background: var(--emerald) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23012B27' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E") center/70% no-repeat;
@@ -469,6 +490,11 @@ a.card .more { margin-top: auto; padding-top: 1rem; font-weight: 600; font-size:
     .footer-grid { grid-template-columns: 1fr; }
     .report-tally div { padding: .6rem .8rem; }
     .covers, .calc-in { grid-template-columns: 1fr; }
+    .tree { padding: 1.15rem 1rem 1.25rem; }
+    .tree-branches li { grid-template-columns: 1fr; align-items: start; gap: .45rem; }
+    .tree-who { margin-left: 0; }
+    .tree-branches li::before { top: .95rem; }
+    .tree-branches li:last-child::after { height: .95rem; }
     .report li { grid-template-columns: 12px 1fr; }
     .report .ref { grid-column: 2; text-align: left; }
     .btn-row .btn { width: 100%; }
