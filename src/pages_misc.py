@@ -280,13 +280,13 @@ def _terms_body(src_path):
     hdr = re.search(r'<div class="terms-header">(.*?)</div>\s*<div class="terms-content">', raw, re.S).group(1)
     hdr = re.sub(r"<h1>.*?</h1>", "", hdr, flags=re.S)
     content = re.search(r'<div class="terms-content">(.*?)<div class="last-updated">', raw, re.S).group(1)
-    return (phero("Terms and conditions", "Terms and Conditions of Use", "Convex Legal Pty Ltd (ABN 87 692 237 577) trading as Convex AI.")
+    return (phero("Terms and conditions", "Terms of Use", "Convex Legal Pty Ltd (ABN 87 692 237 577).")
             + section(f'<div class="prose terms-content">{hdr}{content}</div>'))
 
 
 def terms_page(src_path):
-    return dict(file="terms-and-conditions.html", nav="", title="Terms and Conditions | Convex",
-                desc="Terms and conditions of use for the Convex AI contract review platform.", crumb="Terms and conditions",
+    return dict(file="terms-and-conditions.html", nav="", title="Terms of Use | Convex",
+                desc="Terms of use for the Convex AI contract review platform.", crumb="Terms and conditions",
                 body=_terms_body(src_path))
 
 
