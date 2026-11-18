@@ -220,6 +220,8 @@ HOW = dict(
     faqs=how_faqs, crumb="How it works",
     body=phero("How it works", "How a Convex review works",
                "A Convex review follows the same order you would: set up the matter, understand the buyer, read every document in the contract against their circumstances, then put the findings into a letter ready to send.")
+    + section(head("Demo", "See Convex in action", "A short walkthrough of the platform.", True)
+      + '<div class="narrow" style="margin:0 auto"><div class="video"><iframe src="https://www.youtube-nocookie.com/embed/rUPKEoJ_Ag0" title="Convex demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></div></div>', "alt", "demo")
     + section('''<ol class="detail-steps">
 <li><div><h3>Enter the matter details</h3>
 <p>Add the matter number and your client's names. These populate your letterhead and the letter itself. Use the same matter number as your practice management system so the letter files against the right matter.</p>
