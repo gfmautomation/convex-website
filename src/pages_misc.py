@@ -3,13 +3,23 @@ from common import *
 
 # ---------------------------------------------------------------- PRICING
 TOPUP = 29
+FEATURES = [
+    "All contract types",
+    "All purchaser lens packs",
+    "Traffic light report",
+    "Client-ready letter in Word and PDF",
+    "Custom letterhead branding",
+    "Bulk contract uploads",
+    "OCR for scanned PDFs",
+    "Email and phone support",
+]
 PLANS = [
     ("Small", "For solo practitioners", 145, 1560, 5, "About 1 review a week. Suits a sole practitioner, or a lawyer who does conveyancing alongside other work.",
-     ["All contract types", "All purchaser lens packs", "Traffic light report", "Client-ready letter in Word and PDF", "OCR for scanned PDFs", "Email and phone support"], False),
+     FEATURES, False),
     ("Medium", "For growing practices", 595, 6370, 20, "About 1 review every business day. Suits a busy practitioner or a small conveyancing team.",
-     ["Everything in Small", "Bulk contract uploads", "Custom letterhead branding", "Priority support"], True),
+     FEATURES, True),
     ("Large", "For high-volume firms", 1495, 14995, 50, "2 to 3 reviews every business day. Suits a firm with several people running contract reviews.",
-     ["Everything in Medium", "Team-ready workflow", "Dedicated account support"], False),
+     FEATURES, False),
 ]
 
 
@@ -118,7 +128,7 @@ FAQ_CATS = [
         ("What file types can I upload?",
          "PDF files, including scanned PDFs, which are read with built-in OCR."),
         ("Can I upload several contracts at once?",
-         "Yes. Bulk uploads are available on the Medium and Large plans."),
+         "Yes. You can upload several contracts at once on every plan."),
         ("What does Convex not review?",
          "Building contracts, business sale contracts, standalone leases, strata inspection reports, building and pest reports, and contracts for property outside NSW."),
     ]),
@@ -160,7 +170,7 @@ FAQ_CATS = [
         ("Does the letter suggest amendments?",
          "Today the letter explains the legal implication of each issue for the buyer. Suggested amendments are coming soon: they will appear in italics under each issue for ease of reference, with a separate amendments list you can download and send to the vendor's solicitor. You decide which to adopt."),
         ("Can I use my own letterhead?",
-         "Yes. Custom letterhead branding is included on the Medium and Large plans."),
+         "Yes. Custom letterhead branding is included on every plan."),
         ("How do I get the letter to my client?",
          "Download it in Word or PDF and send it the way you usually do, then save it to the matter in your practice management system. The Smokeball and Clio integrations will save it back to the matter automatically once released."),
         ("How long does a review take?",
