@@ -16,7 +16,7 @@ FEATURES = [
 PLANS = [
     ("Small", "For solo practitioners", 145, 1560, 5, "About 1 review a week. Suits a sole practitioner, or a lawyer who does conveyancing alongside other work.",
      FEATURES, False),
-    ("Medium", "For growing practices", 595, 6370, 20, "About 1 review every business day. Suits a busy practitioner or a small conveyancing team.",
+    ("Medium", "For growing practices", 595, 6370, 25, "About 1 review every business day. Suits a busy practitioner or a small conveyancing team.",
      FEATURES, True),
     ("Large", "For high-volume firms", 1495, 14995, 50, "2 to 3 reviews every business day. Suits a firm with several people running contract reviews.",
      FEATURES, False),
@@ -31,14 +31,14 @@ def _plans():
         out.append(f'''<div class="plan{' featured' if featured else ''}">{pill}<h3>{name}</h3><p class="for">{for_}</p>
 <p class="price" data-monthly="{m}" data-yearly="{y}">$<span class="amt">{m:,}</span><span class="per">/month</span></p>
 <p class="price-note" data-note-monthly="Billed monthly" data-note-yearly="Billed once a year, {cr*12} credits issued upfront">Billed monthly</p>
-<div class="credits"><b>{cr}</b><span>reviews a month</span></div>
+<div class="credits" data-reviews-monthly="{cr}" data-reviews-yearly="{cr * 12}"><b>{cr}</b><span>reviews a month</span></div>
 <p class="suits">{suits}</p>
 <ul>{li}</ul><a class="btn" href="{APP_REGISTER}">Start your trial</a></div>''')
     return "".join(out)
 
 
 CREDIT_STEPS = f'''<ol class="steps credit-steps">
-  <li><h3>Your allowance arrives</h3><p>At the start of each billing month you receive your plan's credits: 5, 20 or 50. On a yearly plan the full year's credits (60, 240 or 600) arrive upfront and can be used at any pace across the year.</p></li>
+  <li><h3>Your allowance arrives</h3><p>At the start of each billing month you receive your plan's credits: 5, 25 or 50. On a yearly plan the full year's credits (60, 300 or 600) arrive upfront and can be used at any pace across the year.</p></li>
   <li><h3>1 review uses 1 credit</h3><p>The traffic light report and client letter are included. A review that fails to complete is generally not charged.</p></li>
   <li><h3>Top up in a busy month</h3><p>Buy extra credits at ${TOPUP} each, from 1 to 100 at a time, from your billing page. They are added to your balance straight away.</p></li>
   <li><h3>Unused credits expire</h3><p>Credits do not roll over. When your next billing period starts, any remaining credits, including top-ups, expire and a fresh allowance is issued.</p></li>
@@ -68,7 +68,7 @@ price_faqs = [
 PRICING = dict(
     file="pricing.html", nav="pricing",
     title="Convex Pricing | Contract Review Plans, Credits and Top-ups",
-    desc="Convex plans for NSW conveyancers and property lawyers: 5, 20 or 50 contract reviews a month, monthly or yearly, top-up credits when you need them, and a 7-day trial.",
+    desc="Convex plans for NSW conveyancers and property lawyers: 5, 25 or 50 contract reviews a month, monthly or yearly, top-up credits when you need them, and a 7-day trial.",
     faqs=price_faqs, crumb="Pricing",
     body=phero("Pricing", "Plans built around your monthly volume",
                "Every plan includes every contract type and every purchaser lens. Choose the number of reviews you usually run each month, pay monthly or yearly, and top up in a busy month.")
@@ -86,7 +86,7 @@ PRICING = dict(
     + section(head("Worked examples", "What a month looks like")
               + '<div class="grid g3">'
               + card("", "A quiet month on Small", "A solo practitioner runs 4 reviews. 1 credit is left unused and expires at the next billing date, when 5 new credits arrive.")
-              + card("", "A busy month on Medium", "A practice runs 24 reviews. It uses its 20 credits and buys 4 top-ups at $29 each, which expire at the next billing date if unused.")
+              + card("", "A busy month on Medium", "A practice runs 28 reviews. It uses its 25 credits and buys 3 top-ups at $29 each, which expire at the next billing date if unused.")
               + card("", "A yearly plan on Large", "A firm pays once for the year and receives 600 credits upfront. It runs 30 reviews in January and 70 in March without buying top-ups.")
               + '</div>', "alt")
     + section(head("Questions", "Billing and credits") + '<div class="narrow">' + faq(price_faqs) + '</div>')
@@ -198,7 +198,7 @@ FAQ_CATS = [
     ]),
     ("billing", "Pricing and billing", [
         ("How much does Convex cost?",
-         'Small is $145 a month for 5 reviews, Medium $595 a month for 20 reviews, and Large $1,495 a month for 50 reviews. Yearly billing is also available. See <a href="pricing.html">Pricing</a>.'),
+         'Small is $145 a month for 5 reviews, Medium $595 a month for 25 reviews, and Large $1,495 a month for 50 reviews. Yearly plans include 60, 300 and 600 reviews. See <a href="pricing.html">Pricing</a>.'),
         ("Is there a free trial?",
          "Yes. First-time subscribers receive a 7-day trial with 5 review credits."),
         ("Do unused credits roll over?",

@@ -37,6 +37,10 @@
         scope.querySelectorAll('[data-note-monthly]').forEach(function (el) {
           el.textContent = yearly ? el.dataset.noteYearly : el.dataset.noteMonthly;
         });
+        scope.querySelectorAll('[data-reviews-monthly]').forEach(function (el) {
+          el.querySelector('b').textContent = yearly ? el.dataset.reviewsYearly : el.dataset.reviewsMonthly;
+          el.querySelector('span').textContent = yearly ? 'reviews a year' : 'reviews a month';
+        });
         var m = scope.querySelector('.lbl-m'), y = scope.querySelector('.lbl-y');
         if (m) m.classList.toggle('active', !yearly);
         if (y) y.classList.toggle('active', yearly);

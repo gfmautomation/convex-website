@@ -178,9 +178,9 @@ HOME = dict(
 
 {section(head("Pricing", "Plans built around your monthly volume", "Every plan includes every contract type and every purchaser lens. Need more in a busy month? Top up at the same rate per review.", True)
  + '''<div class="grid g3" style="max-width:960px;margin:0 auto">
-  <div class="card" style="text-align:center"><h3>Small</h3><p>About 1 review a week</p><p class="price">$145<span class="per">/month</span></p><p><strong>5</strong> reviews a month</p></div>
-  <div class="card" style="text-align:center;border:2px solid var(--emerald)"><h3>Medium</h3><p>About 1 review every business day</p><p class="price">$595<span class="per">/month</span></p><p><strong>20</strong> reviews a month</p></div>
-  <div class="card" style="text-align:center"><h3>Large</h3><p>2 to 3 reviews every business day</p><p class="price">$1,495<span class="per">/month</span></p><p><strong>50</strong> reviews a month</p></div>
+  <div class="card" style="text-align:center"><h3>Small</h3><p>About 1 review a week</p><p class="price">$145<span class="per">/month</span></p><p><strong>5</strong> reviews a month<br>or <strong>60</strong> a year</p></div>
+  <div class="card" style="text-align:center;border:2px solid var(--emerald)"><h3>Medium</h3><p>About 1 review every business day</p><p class="price">$595<span class="per">/month</span></p><p><strong>25</strong> reviews a month<br>or <strong>300</strong> a year</p></div>
+  <div class="card" style="text-align:center"><h3>Large</h3><p>2 to 3 reviews every business day</p><p class="price">$1,495<span class="per">/month</span></p><p><strong>50</strong> reviews a month<br>or <strong>600</strong> a year</p></div>
 </div>
 <p style="text-align:center;margin-top:2rem"><a class="btn btn-ghost" href="pricing.html">Plans, credits and top-ups explained</a></p>''')}
 
