@@ -76,7 +76,7 @@ def schema(p):
         blocks.append({"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Convex",
                        "applicationCategory": "BusinessApplication", "operatingSystem": "Web",
                        "description": p["desc"], "url": SITE + "/",
-                       "offers": {"@type": "AggregateOffer", "priceCurrency": "AUD", "lowPrice": "145", "highPrice": "1495", "offerCount": "3"}})
+                       "offers": {"@type": "AggregateOffer", "priceCurrency": "AUD", "lowPrice": "145", "highPrice": "1395", "offerCount": "3"}})
     elif p["file"] != "404.html":
         items = [{"@type": "ListItem", "position": 1, "name": "Home", "item": SITE + "/"}]
         if p.get("parent"):

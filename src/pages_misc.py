@@ -16,9 +16,9 @@ FEATURES = [
 PLANS = [
     ("Small", "For solo practitioners", 145, 1560, 5, "About 1 review a week. Suits a sole practitioner, or a lawyer who does conveyancing alongside other work.",
      FEATURES, False),
-    ("Medium", "For growing practices", 595, 6370, 25, "About 1 review every business day. Suits a busy practitioner or a small conveyancing team.",
+    ("Medium", "For growing practices", 590, 6370, 25, "About 1 review every business day. Suits a busy practitioner or a small conveyancing team.",
      FEATURES, True),
-    ("Large", "For high-volume firms", 1495, 14995, 50, "2 to 3 reviews every business day. Suits a firm with several people running contract reviews.",
+    ("Large", "For high-volume firms", 1395, 14995, 50, "2 to 3 reviews every business day. Suits a firm with several people running contract reviews.",
      FEATURES, False),
 ]
 
@@ -198,7 +198,7 @@ FAQ_CATS = [
     ]),
     ("billing", "Pricing and billing", [
         ("How much does Convex cost?",
-         'Small is $145 a month for 5 reviews, Medium $595 a month for 25 reviews, and Large $1,495 a month for 50 reviews. Yearly plans include 60, 300 and 600 reviews. See <a href="pricing.html">Pricing</a>.'),
+         'Small is $145 a month for 5 reviews, Medium $590 a month for 25 reviews, and Large $1,395 a month for 50 reviews. Yearly plans include 60, 300 and 600 reviews. See <a href="pricing.html">Pricing</a>.'),
         ("Is there a free trial?",
          "Yes. First-time subscribers receive a 7-day trial with 5 review credits."),
         ("Do unused credits roll over?",
